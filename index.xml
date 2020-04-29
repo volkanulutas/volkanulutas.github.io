@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Volkan Ulutaş</title>
+    <link>https://volkanulutas.github.io/</link>
+    <description>Recent content on Volkan Ulutaş</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://volkanulutas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logger&#39;ların Tarihçesi</title>
+      <link>https://volkanulutas.github.io/posts/2020/04/loggerlar%C4%B1n-tarih%C3%A7esi/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://volkanulutas.github.io/posts/2020/04/loggerlar%C4%B1n-tarih%C3%A7esi/</guid>
+      <description>Logger&amp;rsquo;ların Tarihçesi Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir.</description>
+    </item>
+    
+    <item>
+      <title>Latex Kurulumu MacOS (Visual Code, MikTex)</title>
+      <link>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</guid>
+      <description>Merhabalar, bir önceki yazımda Latex kurulumunu Windows üzerinde yapmıştık, ilgili içeriğe buradan erişebilirsiniz. Şimdi kurulumu Mac kullanıcıları için yapacağız.
+1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
+ Visual Studio Code MikTex  2. MikTex Kurulumu  İndirilmiş olan kurulum dosyasını çift tıklayınız. Daha sonra aşağıdaki gibi izin vermeniz gerekebilir.  Aşağıda görülen Mac yükleme ekranındaki gibi MikTex sembolünü &amp;ldquo;Applications&amp;rdquo; sembolünün üzerine sürükleyiniz.  Kurulum tamamlanınca aşağıdaki gibi bir ekran (MikTex Console) belirecektir.</description>
+    </item>
+    
+    <item>
+      <title>Latex Kurulumu Windows (Visual Code, MikTex)</title>
+      <link>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-windows-visual-code-miktex/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-windows-visual-code-miktex/</guid>
+      <description>Merhabalar, Latex tez yazarken size büyük kolaylık sağlayacaktır. Birçok kurulum türü bulunmasına rağmen zamanınızı çok almayacak bir yöntem paylaşmak istiyorum, umarım işinize yarar.
+1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
+ Windows mimarinize uygun türü seçmeyi unutmayınız (x86/x64).
+  StrawberryPerl Visual Studio Code MikTex  2. Miktex Kurulumu İndirilmiş olan kurulum dosyasına çift tıkladıktan sonra, tüm varsayılan ayarları kabul ederek kurulumu tamamlayanız.
+ Start &amp;gt; MikTex Console &amp;gt; Updates &amp;gt; Check for updates menüsünde geliniz.</description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>https://volkanulutas.github.io/cv/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://volkanulutas.github.io/cv/</guid>
+      <description>volkanulutas@gmail.com Education  B.S. in Computer Engineering, Çankaya University, 2013 B.S. in Economics, Anadolu University, 2016 M.S. in Computer Engineering, Hacettepe University, 2019  Work experience   February 2013 - February 2016: Software Engineer, MilSOFT.
+ Geographical Information Systems (GWT-JS Application) Augmented Reality Android application.    February 2016 - July 2017: Senior Software Engineer, MilSOFT.
+ Swing and JavaEE applications. RESTful WEB Services AngularJS based WEB applications. Knowledge about engineering configuration management    July 2017 - : Senior Software Engineer, TAI (Turkish Aerospace), TUSAŞ.</description>
+    </item>
+    
+    <item>
+      <title>Hakkında</title>
+      <link>https://volkanulutas.github.io/about-en/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://volkanulutas.github.io/about-en/</guid>
+      <description>2013 yılından beri profesyonel olarak savunma sanayi projelerinde yazılım mühendisi olarak çalışmaya devam Volkan, açık kaynak ve özgür yazılım kullanarak yazılım ürünleri geliştirdi. 2017 yılından beri Uzay Sistemleri alanında yer yazılımları geliştirmektedir. Yüksek lisans tez çalışmaların veri madenciliği ve &amp;ldquo;Omuz Fizyoterapi&amp;rdquo; ana başlığında omuz rahatsızlıklarına destekleyici çözümler üretmeye çalıştı. Detaylı bilgi için CV bölümüne bakabilirsiniz. Blog kısmında yer alan yazılara göz atabilirsiniz. İletişim kurmak isterseniz, volkanulutas@gmail.com adresini kullanabilirsiniz.
+Kalın sağlıcakla. Mayıs, 2019.</description>
+    </item>
+    
+    <item>
+      <title>Hakkında</title>
+      <link>https://volkanulutas.github.io/about/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://volkanulutas.github.io/about/</guid>
+      <description>2013 yılından beri profesyonel olarak savunma sanayi projelerinde yazılım mühendisi olarak çalışmaya devam Volkan, açık kaynak ve özgür yazılım kullanarak yazılım ürünleri geliştirdi. 2017 yılından beri Uzay Sistemleri alanında yer yazılımları geliştirmektedir. Yüksek lisans tez çalışmaların veri madenciliği ve &amp;ldquo;Omuz Fizyoterapi&amp;rdquo; ana başlığında omuz rahatsızlıklarına destekleyici çözümler üretmeye çalıştı. Detaylı bilgi için CV bölümüne bakabilirsiniz. Blog kısmında yer alan yazılara göz atabilirsiniz. İletişim kurmak isterseniz, volkanulutas@gmail.com adresini kullanabilirsiniz.
+Kalın sağlıcakla. Mayıs, 2019.</description>
+    </item>
+    
+  </channel>
+</rss>

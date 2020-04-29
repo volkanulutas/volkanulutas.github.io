@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://volkanulutas.github.io/posts/2020/04/loggerlar%C4%B1n-tarih%C3%A7esi/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-windows-visual-code-miktex/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/apache-commons/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/categories/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://volkanulutas.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://volkanulutas.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/java.util.logging/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/log4j/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/logback/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/posts/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/slf4j/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://volkanulutas.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://volkanulutas.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/categories/yaz%C4%B1l%C4%B1m-tarih%C3%A7eleri/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/latex/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/macos/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/miktex/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/tags/visual-code/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/categories/ipu%C3%A7lar%C4%B1/</loc>
+    <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/cv/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/about-en/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/about/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://volkanulutas.github.io/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://volkanulutas.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="https://volkanulutas.github.io/"
+                />
+  </url>
+  
+</urlset>
