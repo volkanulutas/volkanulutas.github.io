@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://volkanulutas.github.io/en/categories/</loc>
+    <loc>http://volkanulutas.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://volkanulutas.github.io/categories/"
+                href="http://volkanulutas.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://volkanulutas.github.io/en/categories/"
+                href="http://volkanulutas.com/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://volkanulutas.github.io/en/tags/</loc>
+    <loc>http://volkanulutas.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://volkanulutas.github.io/tags/"
+                href="http://volkanulutas.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://volkanulutas.github.io/en/tags/"
+                href="http://volkanulutas.com/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://volkanulutas.github.io/en/</loc>
+    <loc>http://volkanulutas.com/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://volkanulutas.github.io/"
+                href="http://volkanulutas.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://volkanulutas.github.io/en/"
+                href="http://volkanulutas.com/en/"
                 />
   </url>
   

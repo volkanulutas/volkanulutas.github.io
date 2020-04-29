@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>macos on Volkan Ulutaş</title>
-    <link>https://volkanulutas.github.io/tags/macos/</link>
+    <link>http://volkanulutas.com/tags/macos/</link>
     <description>Recent content in macos on Volkan Ulutaş</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://volkanulutas.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://volkanulutas.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Latex Kurulumu MacOS (Visual Code, MikTex)</title>
-      <link>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</link>
+      <link>http://volkanulutas.com/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://volkanulutas.github.io/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</guid>
+      <guid>http://volkanulutas.com/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</guid>
       <description>Merhabalar, bir önceki yazımda Latex kurulumunu Windows üzerinde yapmıştık, ilgili içeriğe buradan erişebilirsiniz. Şimdi kurulumu Mac kullanıcıları için yapacağız.
 1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
  Visual Studio Code MikTex  2. MikTex Kurulumu  İndirilmiş olan kurulum dosyasını çift tıklayınız. Daha sonra aşağıdaki gibi izin vermeniz gerekebilir.  Aşağıda görülen Mac yükleme ekranındaki gibi MikTex sembolünü &amp;ldquo;Applications&amp;rdquo; sembolünün üzerine sürükleyiniz.  Kurulum tamamlanınca aşağıdaki gibi bir ekran (MikTex Console) belirecektir.</description>
