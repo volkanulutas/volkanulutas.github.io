@@ -17,7 +17,7 @@
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://volkanulutas.com/posts/2020/04/loggerlar%C4%B1n-tarih%C3%A7esi/</guid>
-      <description>Logger&amp;rsquo;ların Tarihçesi Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir.</description>
+      <description>Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &amp;ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&amp;rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir.</description>
     </item>
     
     <item>
