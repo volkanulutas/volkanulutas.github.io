@@ -3,22 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://volkanulutas.com/posts/2020/04/loggerlar%C4%B1n-tarih%C3%A7esi/</loc>
+    <loc>http://volkanulutas.com/blog/2020-04-23-loggerlarin-tarihcesi/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://volkanulutas.com/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</loc>
+    <loc>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu-macos/</loc>
     <lastmod>2019-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://volkanulutas.com/posts/2019/10/latex-kurulumu-windows-visual-code-miktex/</loc>
+    <loc>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu/</loc>
     <lastmod>2019-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://volkanulutas.com/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://volkanulutas.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://volkanulutas.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://volkanulutas.com/cv/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://volkanulutas.com/tags/apache-commons/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://volkanulutas.com/blog/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -49,11 +74,6 @@
   
   <url>
     <loc>http://volkanulutas.com/tags/logback/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://volkanulutas.com/posts/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,33 +128,8 @@
   </url>
   
   <url>
-    <loc>http://volkanulutas.com/cv/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://volkanulutas.com/about-en/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://volkanulutas.com/about/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://volkanulutas.com/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://volkanulutas.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tr"
-                href="http://volkanulutas.com/"
-                />
   </url>
   
 </urlset>

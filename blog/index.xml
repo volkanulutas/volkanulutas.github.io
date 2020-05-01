@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>İpuçları on Volkan Ulutaş</title>
-    <link>http://volkanulutas.com/categories/ipu%C3%A7lar%C4%B1/</link>
-    <description>Recent content in İpuçları on Volkan Ulutaş</description>
+    <title>Blogs on Volkan Ulutaş</title>
+    <link>http://volkanulutas.com/blog/</link>
+    <description>Recent content in Blogs on Volkan Ulutaş</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://volkanulutas.com/categories/ipu%C3%A7lar%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://volkanulutas.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Logger&#39;ların Tarihçesi</title>
+      <link>http://volkanulutas.com/blog/2020-04-23-loggerlarin-tarihcesi/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/blog/2020-04-23-loggerlarin-tarihcesi/</guid>
+      <description>Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &amp;ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&amp;rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir.</description>
+    </item>
     
     <item>
       <title>Latex Kurulumu MacOS (Visual Code, MikTex)</title>

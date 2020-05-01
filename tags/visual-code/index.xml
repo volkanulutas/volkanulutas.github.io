@@ -13,10 +13,10 @@
     
     <item>
       <title>Latex Kurulumu MacOS (Visual Code, MikTex)</title>
-      <link>http://volkanulutas.com/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</link>
+      <link>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu-macos/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://volkanulutas.com/posts/2019/10/latex-kurulumu-macos-visual-code-miktex/</guid>
+      <guid>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu-macos/</guid>
       <description>Merhabalar, bir önceki yazımda Latex kurulumunu Windows üzerinde yapmıştık, ilgili içeriğe buradan erişebilirsiniz. Şimdi kurulumu Mac kullanıcıları için yapacağız.
 1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
  Visual Studio Code MikTex  2. MikTex Kurulumu  İndirilmiş olan kurulum dosyasını çift tıklayınız. Daha sonra aşağıdaki gibi izin vermeniz gerekebilir.  Aşağıda görülen Mac yükleme ekranındaki gibi MikTex sembolünü &amp;ldquo;Applications&amp;rdquo; sembolünün üzerine sürükleyiniz.  Kurulum tamamlanınca aşağıdaki gibi bir ekran (MikTex Console) belirecektir.</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Latex Kurulumu Windows (Visual Code, MikTex)</title>
-      <link>http://volkanulutas.com/posts/2019/10/latex-kurulumu-windows-visual-code-miktex/</link>
+      <link>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu/</link>
       <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://volkanulutas.com/posts/2019/10/latex-kurulumu-windows-visual-code-miktex/</guid>
+      <guid>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu/</guid>
       <description>Merhabalar, Latex tez yazarken size büyük kolaylık sağlayacaktır. Birçok kurulum türü bulunmasına rağmen zamanınızı çok almayacak bir yöntem paylaşmak istiyorum, umarım işinize yarar.
 1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
  Windows mimarinize uygun türü seçmeyi unutmayınız (x86/x64).
