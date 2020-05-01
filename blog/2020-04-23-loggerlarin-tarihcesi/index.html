@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Volkan Ulutaş]">
+<meta name="description" content="Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &amp;ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&amp;rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir." />
+<meta name="keywords" content=", Log4j, Apache Commons, java.util.logging, Slf4j, Logback" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="http://volkanulutas.com/blog/2020-04-23-loggerlarin-tarihcesi/" />
+
+
+    <title>
+        
+            Logger&#39;ların Tarihçesi :: Volkan Ulutaş  — Yazılım Mühendisi
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="http://volkanulutas.com/main.min.753fac8f03736f0edc9be411eb20cee875dd7bb8e73c8155fbf6a629c863f4ca.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="http://volkanulutas.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://volkanulutas.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://volkanulutas.com/favicon-16x16.png">
+    <link rel="manifest" href="http://volkanulutas.com/site.webmanifest">
+    <link rel="mask-icon" href="http://volkanulutas.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="http://volkanulutas.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Logger&#39;ların Tarihçesi">
+<meta itemprop="description" content="Log kelimesini Türkçeye &ldquo;günlük kaydı&rdquo; veya &ldquo;olay kaydı&rdquo; olarak Türkçe&rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir.">
+<meta itemprop="datePublished" content="2020-04-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="782">
+<meta itemprop="image" content="http://volkanulutas.com/"/>
+
+
+
+<meta itemprop="keywords" content="Log4j,Apache Commons,java.util.logging,Slf4j,Logback," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://volkanulutas.com/"/>
+
+<meta name="twitter:title" content="Logger&#39;ların Tarihçesi"/>
+<meta name="twitter:description" content="Log kelimesini Türkçeye &ldquo;günlük kaydı&rdquo; veya &ldquo;olay kaydı&rdquo; olarak Türkçe&rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir."/>
+
+
+
+
+
+    <meta property="article:section" content="Yazılım Tarihçeleri" />
+
+
+
+    <meta property="article:published_time" content="2020-04-23 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="http://volkanulutas.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /volkanulutas/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="http://volkanulutas.com/blog/">Blog</a></li><li><a href="http://volkanulutas.com/about/">Hakkında</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://volkanulutas.com/blog/2020-04-23-loggerlarin-tarihcesi/">Logger&rsquo;ların Tarihçesi</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>Log kelimesini Türkçeye &ldquo;günlük kaydı&rdquo; veya &ldquo;olay kaydı&rdquo; olarak Türkçe&rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir. Kısacası log tanımını aşağıdaki gibi yapmak uygun olacaktır:</p>
+<blockquote>
+<p>&ldquo;Belirli bir sistemle ilgili olayların otomatik olarak ve zaman damgalı belgelendirilmesidir.&rdquo;</p>
+</blockquote>
+<p>Java’da, çok uzun bir süre önce, loglamanın bir yolu yoktu. İlkel yöntemlerle loglama yapılıyordu:</p>
+<ul>
+<li>System.out</li>
+<li>System.err</li>
+<li>Exception.printStackTrace()</li>
+</ul>
+<p>Bu yapıların bir dezavantajı bulunmaktaydı. Bu log kayıtları sadece konsola yazılmaktaydı ve konsol kapatıldığında bu kayıtlara erişim sağlanamıyordu.  Şimdi bu işlemleri &ldquo;File&rdquo; yönetimiyle log&rsquo;ları oraya kaydedebilirdik diye düşünebilirsiniz; ancak bu işlemlerdeki maliyet çok yüksek olabilmektedir ve hataya açıktır.</p>
+<p>Günümüzün bilinirlği en yüksek loglama kütüphaneleri ise:</p>
+<ul>
+<li>log4j</li>
+<li>logback</li>
+<li>slf4j</li>
+<li>commons-logging</li>
+<li>java.util.logging</li>
+</ul>
+<p><strong>Log4j</strong></p>
+<p>1996 yılında E.U. SEMPER projesi kendi loglama altyapısını oluşturmaya karar verdi. 1999 yıllarıda, Log4j kütüphanesi doğmaya başlayadı. API’nin, Java için popüler loglama paketi haline gelmesi için pek çok çalışmalar yapıldı. Sonrasında,  bir açık kaynak lisansı olan Apache Yazılım Lisansı kapsamında dağıtımına başlanmıştır.</p>
+<p><strong>JUL - java.util.logging</strong>
+Log4J projelerde sıklıkla kullanılmaya başlamıştı. O zamanlar, Java Sun şirketine aitti ve Java içinde bir loglama özelliğine ihtiyaç duyduğunu hissetti, ancak doğrudan Log4j kullanmak yerine, Log4j&rsquo;den esinlenerek, 2002 yılının başlarında JDK 1.4 içerisinde java.util.logging (JUL) paketini oluşturdu; ancak kısa bir süre sonra ortak bir loglama arayüzüne ihtiyaç olduğu anlaşıldı. Bir arayüz tanımı ardından herkes istediği loglama altyapısını kullanabilecekti ve tüm bu loglama altyapılarının ayarları sistem tarafıdan kolaylıkla tek bir merkezden yönetilebilekti, kullanılan her altyapı için ayrı ayrı ayar yapmak zorunda olunmayacaktı. Ayar yaparken bile tek bir standartın öğrenilmesi yetenecekti.</p>
+<p><strong>Apache Commons (JCL) - Ortak Bir Loglama Altyapına Doğru</strong></p>
+<p>Loglama tarafında birbirinden farklı kütüphaneler ortaya çıkmaya başlayınca 2002 yılı ortalarında Jakarta ekibi &ldquo;commons logging&rdquo; için JCL (Jakarta Commons Logging diğer bilinen adıyla <a href="https://commons.apache.org/proper/commons-logging/">Apache Commons Logging Manuel</a>) projesini çıkardılar. Bu sayede eğer bir loglama altyapsı kullacaksınız projenize bu altyapı standartlarına uygun loglama altyapını ekleyebilir hale geldiniz. Yani burada ortak bir standartlaşma ortaya konularak bir log altyapısının ne yapması gerektiği ve nasıl kullanılacağı standartlaştırılmış oldu, projenizde birden fazla loglama kütüphanesi kullanabilir ve bunların hepsi için ortak ve tek bir tane konfigürasyon dosyası ile yönetim sağlayabilir hale gelmiş olduk.</p>
+<p><strong>Slf4j</strong></p>
+<p>Loglama kütüphanelerinde evrimleşme devam ederken, JCL yeterince iyi çözümler sunamıyordu. Kullanıcılar tarafından çözdüğünden daha fazla sorun yarattığını söyleniyordu. Ceki Gülcü (Log4j’nin de mimarı olarak bilinir ve <a href="https://www.amazon.com/Complete-Log4j-Manual-Ceki-Gulcu/dp/2970036908">Complete Log4j Manuel</a> kitabının da yazarıdır.) kollarını sıvadı ve 2005 yılında yeni bir SLF4J (Simple Logging Facade) projesini çıkardı. Aslında adı Log4jv2 olabilecekken basitlik vurgusuyla bu ismi seçmiş olabilirler, bilinmez; ama Ceki Gülcü’nün amacı daha iyi bir ortak loglama altyapısı ortaya çıkartmaktı.</p>
+<p>Slf4J&rsquo;nin resmi sitesinde yer alan tanımına bakacak olursak,</p>
+<blockquote>
+<blockquote>
+<p>The Simple Logging Facade for Java or (SLF4J) is intended to serve as a simple facade for various logging APIs allowing to the end-user to plug in the desired implementation at deployment time. SLF4J also allows for a gradual migration path away from Jakarta Commons Logging (JCL).</p>
+</blockquote>
+</blockquote>
+<p>Türkçesiyle;</p>
+<blockquote>
+<blockquote>
+<p>Java için SLF4J, son kullanıcının(yazılım geliştiricinin) dağıtım zamanında istenen loglama kütüphanesini projesinde kullanmasına izin veren bir altyapıda &ldquo;facade&rdquo; tasarım örüntüsü kullanılarak geliştirilmiştir. Ek olarak, Jakarta Commons Logging&rsquo;den (JCL) aşamalı şekilde göç etmenize de izin verir.</p>
+</blockquote>
+</blockquote>
+<p><strong>Logback</strong>
+Log4j, 1999 yılından beri sıklıkla kullanılan loglama altyapısı olmasına rağmen yeterince iyi değildi, yine yaratıcısı tarafından (Ceki Gülcü) yeni bir projeyle - logback ile değiştirildi. 2006 yılında logback görücüye çıktı. Logback, Log4j&rsquo;ye göre daha iyi bir altyapı diyebiliriz çünkü yaratıcısı eski altyapının eksiklerini tespit edip, tecrübelerinin artışıyla birlikte de daha bir altyapı sunmuş oldu. Bu konuda Güclü&rsquo;nün açıklamalarına <a href="http://logback.qos.ch/reasonsToSwitch.html">buradan</a> erişebilirsiniz.</p>
+<p><strong>Günümüz</strong>
+Günümüze baktığımızda bir çok loglama API&rsquo;sı bulunuyor burada bir kaos ortamı bulunuyor; ancak iki adet ortaklaşma kütüphanesi (commons-logging ve slf4j) sayesinde istediğiniz loglama altyapsını rahatlıkla kullanabiliyoruz diyebiliriz. Projemizi geliştirirken kullandığımız birçok farklı kütüphaneden faydalanıyoruz, hepsinin kullandığı ayrı loglama altyapıları olabiliyor. &ldquo;Classpath&quot;imizde birbirinde farklı bir sürü loglama altyapısı bulunabiliyor, maven sayesinde doğru versiyonları bulabiliyoruz.</p>
+<p>Peki doğru çözüm nedir?
+En kısa yoldan slf4j ve logback kullanmaktır diyebiliriz.</p>
+<p><strong>Son olarak,</strong>
+Şimdilerde loglama kütüphaneleri sayesinde, ortaklaştırılmasının (ata bir yapıdan türetilmesi) sağlanmasıyla birlikte loglar dosya sisteminde saklanabilir, e-posta ile gönderilebilir, hatta bulut tabanları sistemler yardımıyla o log&rsquo;tan (hata veya uyarıdan) sorumlu kişiye telefon araması yapma yeteneğine bile sahiptir. Veritabanlarına kaydedilmiş loglar, veri madenciliği uygulamalarıyla anlamlandırılarak sistemin zayıflıkları, hatanın çok yapıldığı yerler tespit edilerek canlı ortamda bulunan bu sorunlar çözülebilir hale geldi.</p>
+<p><strong>Kaynakça</strong></p>
+<p><a href="https://www.javacodegeeks.com/2011/09/java-logging-mess.html">[javacodegeeks, Bozhidar Bozhanov]</a></p>
+<p><a href="http://www.qos.ch/">[Şirket Sitesi, Ceki Gülcü]</a></p>
+<p><a href="https://blog.frankel.ch/thoughts-on-java-logging-and-slf4j/">[Blog, Nicolas Fränkel]</a></p>
+<p>Soru, görüş ve önerilerinizi bu sayfaya yorum yapabilirsiniz. Bana erişmek için <a href="mailto:volkanulutas@gmail.com">volkanulutas@gmail.com</a> adresini kullanabilirsiniz.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="http://volkanulutas.com/tags/log4j">Log4j</a></span><span class="tag"><a href="http://volkanulutas.com/tags/apache-commons">Apache Commons</a></span><span class="tag"><a href="http://volkanulutas.com/tags/java.util.logging">java.util.logging</a></span><span class="tag"><a href="http://volkanulutas.com/tags/slf4j">Slf4j</a></span><span class="tag"><a href="http://volkanulutas.com/tags/logback">Logback</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="http://volkanulutas.com/">Volkan Ulutaş</a></span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span> <a href="http://volkanulutas.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="http://volkanulutas.com/bundle.min.4a69500057d68129e88f497d354afe68422eb56de6d15e45dbe2190858ea5a76bfcb096406f992984b241db45f47388ac57ab0376e3b32125bef7a8a6d0f06c4.js" integrity="sha512-SmlQAFfWgSnoj0l9NUr&#43;aEIutW3m0V5F2&#43;IZCFjqWna/ywlkBvmSmEskHbRfRziKxXqwN247MhJb73qKbQ8GxA=="></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Volkan Ulutaş</title>
+    <link>http://volkanulutas.com/</link>
+    <description>Recent content on Volkan Ulutaş</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://volkanulutas.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logger&#39;ların Tarihçesi</title>
+      <link>http://volkanulutas.com/blog/2020-04-23-loggerlarin-tarihcesi/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/blog/2020-04-23-loggerlarin-tarihcesi/</guid>
+      <description>Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &amp;ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&amp;rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir.</description>
+    </item>
+    
+    <item>
+      <title>Latex Kurulumu MacOS (Visual Code, MikTex)</title>
+      <link>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu-macos/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu-macos/</guid>
+      <description>Merhabalar, bir önceki yazımda Latex kurulumunu Windows üzerinde yapmıştık, ilgili içeriğe buradan erişebilirsiniz. Şimdi kurulumu Mac kullanıcıları için yapacağız.
+1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
+ Visual Studio Code MikTex  2. MikTex Kurulumu  İndirilmiş olan kurulum dosyasını çift tıklayınız. Daha sonra aşağıdaki gibi izin vermeniz gerekebilir.  Aşağıda görülen Mac yükleme ekranındaki gibi MikTex sembolünü &amp;ldquo;Applications&amp;rdquo; sembolünün üzerine sürükleyiniz.  Kurulum tamamlanınca aşağıdaki gibi bir ekran (MikTex Console) belirecektir.</description>
+    </item>
+    
+    <item>
+      <title>Latex Kurulumu Windows (Visual Code, MikTex)</title>
+      <link>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu/</guid>
+      <description>Merhabalar, Latex tez yazarken size büyük kolaylık sağlayacaktır. Birçok kurulum türü bulunmasına rağmen zamanınızı çok almayacak bir yöntem paylaşmak istiyorum, umarım işinize yarar.
+1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
+ Windows mimarinize uygun türü seçmeyi unutmayınız (x86/x64).
+  StrawberryPerl Visual Studio Code MikTex  2. Miktex Kurulumu İndirilmiş olan kurulum dosyasına çift tıkladıktan sonra, tüm varsayılan ayarları kabul ederek kurulumu tamamlayanız.
+ Start &amp;gt; MikTex Console &amp;gt; Updates &amp;gt; Check for updates menüsünde geliniz.</description>
+    </item>
+    
+    <item>
+      <title>Özgeçmiş</title>
+      <link>http://volkanulutas.com/cv/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/cv/</guid>
+      <description>İletişim volkanulutas@gmail.com
+Eğitim  Yüksek Lisans, Bilgisayar Mühendisliği, Hacettepe Üniversitesi, Ankara, 2019.  Tez Konusu: &amp;ldquo;Omuz Egzersizlerinin RGB-D Verisi Kullanılarak Gerçek Zamanlı Kestirimi İçin Sanal Egzersiz Sistemi&amp;rdquo;. YÖKSİS Tez No: 593447, İndirmek için tıklayınız.   Lisans, İşletme (Açık Öğretim), Anadolu Üniversitesi, Eskişehir, 2016. Lisans, Bilgisayar Mühendisliği (Burslu), Çankaya Üniversitesi, Ankara, 2013.  İş Deneyimi   Temmuz 2019 - &amp;hellip; : Uzman Yazılım Tasarım Mühendisi, TUSAŞ-TAI (Turkish Aerospace)
+ Uydu Yer Yazılımları Tasarım ve Geliştirme (Gözlem Kontrol Yazılımı, Görev Planlama Yazılımı) Monolotik yaklaşımla geliştirilmiş yazılımın mikroservis mimarisine geçirilmesi.</description>
+    </item>
+    
+    <item>
+      <title>Hakkında</title>
+      <link>http://volkanulutas.com/about/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/about/</guid>
+      <description>2013 yılından beri profesyonel olarak savunma sanayi projelerinde yazılım mühendisi olarak çalışmaya devam Volkan, açık kaynak ve özgür yazılım kullanarak yazılım ürünleri geliştirdi. 2017 yılından beri Uzay Sistemleri alanında yer yazılımları geliştirmektedir. Yüksek lisans tez çalışmaların veri madenciliği ve &amp;ldquo;Omuz Fizyoterapi&amp;rdquo; ana başlığında omuz rahatsızlıklarına destekleyici çözümler üretmeye çalıştı. Detaylı bilgi için özgeçmişime bakabilirsiniz. Blog kısmında yer alan yazılara göz atabilirsiniz.
+İletişim kurmak isterseniz, volkanulutas@gmail.com adresini kullanabilirsiniz.
+Kalın sağlıcakla. Mayıs, 2019.</description>
+    </item>
+    
+  </channel>
+</rss>

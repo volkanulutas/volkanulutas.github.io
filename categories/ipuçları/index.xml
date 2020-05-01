@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>İpuçları on Volkan Ulutaş</title>
+    <link>http://volkanulutas.com/categories/ipu%C3%A7lar%C4%B1/</link>
+    <description>Recent content in İpuçları on Volkan Ulutaş</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://volkanulutas.com/categories/ipu%C3%A7lar%C4%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Latex Kurulumu MacOS (Visual Code, MikTex)</title>
+      <link>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu-macos/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu-macos/</guid>
+      <description>Merhabalar, bir önceki yazımda Latex kurulumunu Windows üzerinde yapmıştık, ilgili içeriğe buradan erişebilirsiniz. Şimdi kurulumu Mac kullanıcıları için yapacağız.
+1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
+ Visual Studio Code MikTex  2. MikTex Kurulumu  İndirilmiş olan kurulum dosyasını çift tıklayınız. Daha sonra aşağıdaki gibi izin vermeniz gerekebilir.  Aşağıda görülen Mac yükleme ekranındaki gibi MikTex sembolünü &amp;ldquo;Applications&amp;rdquo; sembolünün üzerine sürükleyiniz.  Kurulum tamamlanınca aşağıdaki gibi bir ekran (MikTex Console) belirecektir.</description>
+    </item>
+    
+    <item>
+      <title>Latex Kurulumu Windows (Visual Code, MikTex)</title>
+      <link>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/blog/2019-10-07-latex-kurulumu/</guid>
+      <description>Merhabalar, Latex tez yazarken size büyük kolaylık sağlayacaktır. Birçok kurulum türü bulunmasına rağmen zamanınızı çok almayacak bir yöntem paylaşmak istiyorum, umarım işinize yarar.
+1. Gereksinimler İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.
+ Windows mimarinize uygun türü seçmeyi unutmayınız (x86/x64).
+  StrawberryPerl Visual Studio Code MikTex  2. Miktex Kurulumu İndirilmiş olan kurulum dosyasına çift tıkladıktan sonra, tüm varsayılan ayarları kabul ederek kurulumu tamamlayanız.
+ Start &amp;gt; MikTex Console &amp;gt; Updates &amp;gt; Check for updates menüsünde geliniz.</description>
+    </item>
+    
+  </channel>
+</rss>
