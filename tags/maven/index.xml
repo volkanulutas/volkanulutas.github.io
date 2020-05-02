@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maven on Volkan Ulutaş</title>
+    <link>http://volkanulutas.com/tags/maven/</link>
+    <description>Recent content in Maven on Volkan Ulutaş</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://volkanulutas.com/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Maven Kurulumu (MacOS)</title>
+      <link>http://volkanulutas.com/blog/2020-05-02-maven_kurulumu_macos/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://volkanulutas.com/blog/2020-05-02-maven_kurulumu_macos/</guid>
+      <description>Maven&amp;rsquo;ı MacOS işletim sistemine sahip bilgisayarınıza yüklemek için aşağıdaki adımları takip edebilirsiniz.
+Maven Kurulumu Kontrol Etme Maven bazı MacOS versiyonlarınları önyüklü olarak gelmektedir, kontrol etmek için aşağıdaki komutu terminalde çalıştırınız.
+$mvn -version Sonuç olarak:
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f) Maven home: /Users/volkanulutas/apache-maven-3.6.3 Java version: 1.8.0_231, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre Default locale: tr_TR, platform encoding: UTF-8 OS name: &amp;#34;mac os x&amp;#34;, version: &amp;#34;10.15.4&amp;#34;, arch: &amp;#34;x86_64&amp;#34;, family: &amp;#34;mac&amp;#34; Maven Kurulum Dizini $ whereis mvn /usr/bin/mvn $ cd /usr/bin $$ ls -ls | grep mvn 8 lrwxr-xr-x 1 root wheel 24 May 23 15:57 mvn -&amp;gt; /usr/share/maven/bin/mvn Varsayılan olarak Maven /usr/share/maven dizinine ön tanımlı olarak yüklenmiştir, bir konfigürasyon değişikliği yapmanıza gerek bulunmuyor.</description>
+    </item>
+    
+  </channel>
+</rss>
