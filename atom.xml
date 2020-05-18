@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr">
     <title type="text">Volkan Ulutaş</title>
     <subtitle type="html">Volkan Ulutaş Software Engineer Yazılım Mühendisi</subtitle>
-    <updated>2020-05-18T22:52:53&#43;03:00</updated>
+    <updated>2020-05-19T00:23:40&#43;03:00</updated>
     <id>http://localhost:1313/</id>
     <link rel="alternate" type="text/html" href="http://localhost:1313/" />
     <link rel="self" type="application/atom&#43;xml" href="http://localhost:1313/atom.xml" />
@@ -358,6 +358,113 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
                             
                             
                                 <category scheme="http://localhost:1313/tags/hugo/" term="Hugo" label="Hugo" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">SSH ile Compute Engine&#39;de Oluşturulan Makineye Erişim Sağlamak (Windows)</title>
+            <link rel="alternate" type="text/html" href="http://localhost:1313/posts/2020-05-18-computingengine_ssh_baglantisi_windows/" />
+            <id>http://localhost:1313/posts/2020-05-18-computingengine_ssh_baglantisi_windows/</id>
+            <updated>2020-05-19T00:22:39&#43;03:00</updated>
+            <published>2020-05-18T00:00:00&#43;00:00</published>
+            <author>
+                    <name>volkanulutas</name>
+                    <uri>http://volkanulutas.com</uri>
+                    <email>volkanulutas@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Merhabalar, Google Cloud Platform (GCP)&amp;lsquo;un altında yer alan Compute Engine servisinde tanımlamış olduğumuz bir makineye nasıl erişim sağlayabileceğimizi göreceğiz. ( (önceki yazımızda)[http://volkanulutas.com/posts/2020-05-18-computingengine_ssh_baglantisi_macos/] MacOS üzerinden erişimden bahsetmiştik.)
+  &amp;ldquo;Private/Public Key&amp;rdquo; mimarisine göre öncelikle kendi makinemizde &amp;ldquo;public&amp;rdquo; ve &amp;ldquo;private key&amp;rdquo; oluşturacağız ve CE&amp;rsquo;deki makinemize oluşturduğumuz &amp;ldquo;public key&amp;quot;i ekleyeceğiz. Daha sonra kendi makinemizde yer alan &amp;ldquo;private key&amp;rdquo; ile CE&amp;rsquo;deki makinemize erişeceğiz.</summary>
+            
+                <content type="html">&lt;p&gt;Merhabalar, &lt;a href=&#34;https://cloud.google.com/&#34;&gt;Google Cloud Platform (GCP)&lt;/a&gt;&amp;lsquo;un altında yer alan Compute Engine servisinde tanımlamış olduğumuz bir makineye nasıl erişim sağlayabileceğimizi göreceğiz. ( (önceki yazımızda)[http://volkanulutas.com/posts/2020-05-18-computingengine_ssh_baglantisi_macos/] MacOS üzerinden erişimden bahsetmiştik.)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Private/Public Key&amp;rdquo; mimarisine göre öncelikle kendi makinemizde &amp;ldquo;public&amp;rdquo; ve &amp;ldquo;private key&amp;rdquo; oluşturacağız ve CE&amp;rsquo;deki makinemize oluşturduğumuz &amp;ldquo;public key&amp;quot;i ekleyeceğiz. Daha sonra kendi makinemizde yer alan &amp;ldquo;private key&amp;rdquo; ile CE&amp;rsquo;deki makinemize erişeceğiz. Bunun için (PuTTYgen)[https://www.puttygen.com/] uygulamasını indirelim.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PuTTYgen uygulamasını açıp, &amp;ldquo;Type of key to generate&amp;rdquo; alanında &amp;ldquo;SSH-2 RSA&amp;rdquo; seçeneğini seçelim ve &amp;ldquo;Generate&amp;rdquo; butonuna basalım ve belirli süre sonunda &amp;ldquo;private&amp;rdquo; ve &amp;ldquo;public key&amp;quot;ler oluşturulmuş olacaktır.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Key passphrase&amp;rdquo; alanına tıklayıp bir şifre belirleyelim, daha sonra aynı şifreyi &amp;ldquo;Confirm passphrase&amp;rdquo; alanıyla doğrulayın.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Save private key&amp;rdquo; butonu ile &amp;ldquo;private key&amp;quot;inize bilgisayarınıza kaydetmiş olacaksınız.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Public key for pasting into OpenSSH authorized_keys file&amp;rdquo; alanına sağ seçim yaparak &amp;ldquo;Select All&amp;quot;u seçelim.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Son adım olarak sağ seçim ile oluşan metni kopyayalım (public key).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-3/1.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Bu adımda CE instance&amp;rsquo;ımıza &amp;ldquo;public key&amp;quot;i koymak olacaktır. Bunun için &lt;a href=&#34;https://console.cloud.google.com/compute/&#34;&gt;CE Konsol&lt;/a&gt;&amp;lsquo;una gidelim. Ad kolonunda yer alan &amp;ldquo;instance-1&amp;rdquo; ismine tıklayıp, açılan ekranda &amp;ldquo;Düzenle&amp;quot;ye tılayalım.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/2.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Daha sonra &amp;ldquo;SSH Anahtarları&amp;rdquo; bölümüne gelene kadar sayfada aşağıya ininiz.  &amp;ldquo;Sahip olduğunuz 0 SSH anahtarı var&amp;rdquo; metninin altında &amp;ldquo;ÖĞE EKLE&amp;rdquo; alanına tıklayınız. Bu alana oluşturduğumuz public key&amp;rsquo;imizi metin olarak yapıştıracağız.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/3.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Bu adımda masaüstünüzde oluşturduğunuz key.pub dosyasının bir editor ile açınız. (Notepad++ ile açabilirsiniz.) Buradaki metni kopyalayıp, 8. adımda belirtilen alana yapıştırınız. Daha sonra sayfanın en altında bulunan &amp;ldquo;Kaydet&amp;rdquo; butonına basınız.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/4.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/5.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/6.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;Son adım olarak, PuTTy uygulamasını indiriyoruz. PuTTy uygulamasını aşağıdaki resimlerdeki gibi konfigure etmeliyiz. &amp;ldquo;&lt;a href=&#34;mailto:volkanulutas@104.197.171.167&#34;&gt;volkanulutas@104.197.171.167&lt;/a&gt;&amp;rdquo; alanı için ise 2.adımda kullandığımız en son parametreyi belirtiyor. Adresi ise CE&amp;rsquo;de instance&amp;rsquo;ımızın &amp;ldquo;Harici IP&amp;rdquo; alanına denk gelmektedir. Son olarak &amp;ldquo;private key&amp;quot;i de bu bağlatıya vermeliyiz.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-3/2.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gcp-ce-3/3.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Bu şekilde GCP CE üzerinde yer alan makinemize erişim sağlamış olduk, kendi uygulamalarımızı bu şekilde gerekli kurulumları yaparak test edebiliriz veya sunabiliriz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kaynaklar&lt;/strong&gt;
+&lt;a href=&#34;https://cloud.google.com/compute/docs/instances/connecting-advanced#provide-key&#34;&gt;GCP&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bu şekilde kurulumu tamamlanmış olduk. Soru, görüş ve önerilerinizi bu sayfaya yorum yapabilirsiniz. Bana erişmek için &lt;a href=&#34;mailto:volkanulutas@gmail.com&#34;&gt;volkanulutas@gmail.com&lt;/a&gt; adresini kullanabilirsiniz.&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/categories/google-compute-engine/" term="Google Compute Engine" label="Google Compute Engine" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/google-cloud-platform/" term="Google Cloud Platform" label="Google Cloud Platform" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/computing-engine/" term="Computing Engine" label="Computing Engine" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/cloud/" term="Cloud" label="Cloud" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="http://localhost:1313/tags/ssh/" term="SSH" label="SSH" />
                             
                         
                     
