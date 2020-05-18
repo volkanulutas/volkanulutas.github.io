@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Mon, 18 May 2020 17:35:56 &#43;0300</lastBuildDate>
+        <lastBuildDate>Mon, 18 May 2020 18:30:37 &#43;0300</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
         
@@ -411,7 +411,8 @@ OS name: &lt;span class=&#34;s2&#34;&gt;&amp;#34;mac os x&amp;#34;&lt;/span&gt;,
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &amp;ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&amp;rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir. Kısacası log tanımını aşağıdaki gibi yapmak uygun olacaktır:&lt;/p&gt;
+                    <description>&lt;p&gt;&lt;img src=&#34;/images/loggerlarin-tarihesi/dolmabahce.jpg&#34; alt=&#34;alt text&#34; title=&#34;Dolmabahçe Sarayı, İstanbul (Fotoğraf: @colorartistanbul Unsplash ve Instagram)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Log kelimesini Türkçeye &amp;ldquo;günlük kaydı&amp;rdquo; veya &amp;ldquo;olay kaydı&amp;rdquo; olarak Türkçe&amp;rsquo;ye çevirmek mümkündür. Log bilgileri bir yazılım projesi geliştirirken, geliştiricilerin hem test hem de canlı çalışma ortamlarında büyük avantajlar sağlamaktadır. Örneğin geliştirme ortamında debug (hata ayıklayıcısı) yöntemini kullanabilen yazılımcılar, canlı (prod) veye test ortamlarında böyle bir imkana sahip olamazlar. Özellikle canlı ortamda, potansiyel hataları yakalamak için loglama ihtiyacı bulunur. Bunun yanı sıra bazen bu log bilgileri gereksinimler düzeyinde de istenilmektedir. Örneğin; &amp;ldquo;Belirli rol yetkisine sahip kullanıcının hangi servise veya alana ne zaman giriş yaptığı&amp;rdquo; gibi bilgiler yine log kütüphaneleri yardımıyla kolaylıkla elde edilebilir. Kısacası log tanımını aşağıdaki gibi yapmak uygun olacaktır:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;Belirli bir sistemle ilgili olayların otomatik olarak ve zaman damgalı belgelendirilmesidir.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
