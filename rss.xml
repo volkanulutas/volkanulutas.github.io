@@ -15,15 +15,15 @@
             <language>tr</language>
         
         
-            <managingEditor>volkanulutas@gmail.com (volkanulutas)</managingEditor>
+            <managingEditor>volkanulutas@gmail.com (Volkan Ulutaş)</managingEditor>
         
         
-            <webMaster>volkanulutas@gmail.com (volkanulutas)</webMaster>
+            <webMaster>volkanulutas@gmail.com (Volkan Ulutaş)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Tue, 19 May 2020 00:23:40 &#43;0300</lastBuildDate>
+        <lastBuildDate>Tue, 19 May 2020 18:14:14 &#43;0300</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://localhost:1313/rss.xml" />
         
@@ -34,7 +34,7 @@
                 <guid isPermaLink="true">http://localhost:1313/posts/2020-05-18-hugo-ile-blog-olusturmak/</guid>
                 <pubDate>Mon, 18 May 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
@@ -42,9 +42,9 @@
 &lt;h2 id=&#34;hugo-nedir&#34;&gt;Hugo Nedir?&lt;/h2&gt;
 &lt;p&gt;Hugo, Go dili ile yazılmış bir statik site oluşturucu çatı olarak tanımlanabilir. Go dili ile yazıldığı için göreceli olarak diğer sistemlere göre hızlı bir çözüm sunmaktadır. HTML ve CSS desteği ile hiç Go dili bilmeden sitenizi değiştirerek oluşturabilir veya birçok tema seçeneğinden biriyle sitenizi yayına alabilirsiniz. Git gibi bir sistem ile aşınaysanız, blog yazımını kolaştıracak ve &amp;ldquo;md&amp;rdquo; diliyle (GitHub README dosyalarında olduğu gibi) hızla yazılarınızı oluşturabileceksiniz.&lt;/p&gt;
 &lt;h2 id=&#34;ön-yüklemeler&#34;&gt;Ön Yüklemeler&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;MacOS:&lt;/strong&gt;
-&lt;strong&gt;Brew Kurulumu:&lt;/strong&gt;
-Homebrew Apple&amp;rsquo;ın ihtiyaç duymadığı ama size lazım olabilecek paketleri kurmanızı sağlar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MacOS:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Brew Kurulumu:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Homebrew Apple&amp;rsquo;ın ihtiyaç duymadığı ama size lazım olabilecek paketleri kurmanızı sağlar.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -264,9 +264,9 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
         &lt;span class=&#34;nx&#34;&gt;identifier&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;lang-switcher&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Menü yapısında gözükecek sayfaların ayarlanması bu bölümde yapılır. Anadizinde (blog dizininde) yer alan &amp;ldquo;content&amp;rdquo; dizinine koyacağınız &amp;ldquo;about.md&amp;rdquo; dosyası menü dizininde &amp;ldquo;About&amp;rdquo; isminde gözükecetir. &amp;ldquo;posts&amp;rdquo; dizininde yer alacak, &amp;ldquo;md&amp;rdquo; uzantılı dosyalar ise, &amp;ldquo;categories&amp;rdquo; ve &amp;ldquo;posts&amp;rdquo; olarak gözükecektir. Ayrıca bu temanın özelliği anasaayfada &amp;ldquo;posts&amp;rdquo; altında yer alan &amp;ldquo;md&amp;rdquo; dosyaları gösterilecektir.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Menü yapısında gözükecek sayfaların ayarlanması bu bölümde yapılır. Anadizinde (blog dizininde) yer alan &amp;ldquo;content&amp;rdquo; dizinine koyacağınız &amp;ldquo;about.md&amp;rdquo; dosyası menü dizininde &amp;ldquo;About&amp;rdquo; isminde gözükecetir. &amp;ldquo;posts&amp;rdquo; dizininde yer alacak, &amp;ldquo;md&amp;rdquo; uzantılı dosyalar ise, &amp;ldquo;categories&amp;rdquo; ve &amp;ldquo;posts&amp;rdquo; olarak gözükecektir. Ayrıca bu temanın özelliği anasayfada &amp;ldquo;posts&amp;rdquo; altında yer alan &amp;ldquo;md&amp;rdquo; dosyaları gösterilecektir.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;6. Yeni Bir İçerik Ekleme:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;MacOS / Windos / Linux:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MacOS / Windows / Linux:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -379,11 +379,11 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
                 <guid isPermaLink="true">http://localhost:1313/posts/2020-05-18-computingengine_ssh_baglantisi_windows/</guid>
                 <pubDate>Mon, 18 May 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;Merhabalar, &lt;a href=&#34;https://cloud.google.com/&#34;&gt;Google Cloud Platform (GCP)&lt;/a&gt;&amp;lsquo;un altında yer alan Compute Engine servisinde tanımlamış olduğumuz bir makineye nasıl erişim sağlayabileceğimizi göreceğiz. ( (önceki yazımızda)[http://volkanulutas.com/posts/2020-05-18-computingengine_ssh_baglantisi_macos/] MacOS üzerinden erişimden bahsetmiştik.)&lt;/p&gt;
+                    <description>&lt;p&gt;Merhabalar, &lt;a href=&#34;https://cloud.google.com/&#34;&gt;Google Cloud Platform (GCP)&lt;/a&gt;&amp;lsquo;un altında yer alan Compute Engine servisinde tanımlamış olduğumuz bir makineye nasıl erişim sağlayabileceğimizi göreceğiz. ( &lt;a href=&#34;http://volkanulutas.com/posts/2020-05-18-computingengine_ssh_baglantisi_macos/&#34;&gt;önceki yazımızda&lt;/a&gt; MacOS üzerinden erişimden bahsetmiştik.)&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&amp;ldquo;Private/Public Key&amp;rdquo; mimarisine göre öncelikle kendi makinemizde &amp;ldquo;public&amp;rdquo; ve &amp;ldquo;private key&amp;rdquo; oluşturacağız ve CE&amp;rsquo;deki makinemize oluşturduğumuz &amp;ldquo;public key&amp;quot;i ekleyeceğiz. Daha sonra kendi makinemizde yer alan &amp;ldquo;private key&amp;rdquo; ile CE&amp;rsquo;deki makinemize erişeceğiz. Bunun için (PuTTYgen)[https://www.puttygen.com/] uygulamasını indirelim.&lt;/p&gt;
@@ -401,12 +401,12 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Public key for pasting into OpenSSH authorized_keys file&amp;rdquo; alanına sağ seçim yaparak &amp;ldquo;Select All&amp;quot;u seçelim.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Son adım olarak sağ seçim ile oluşan metni kopyayalım (public key).&lt;/p&gt;
+&lt;p&gt;Son adım olarak sağ seçim ile oluşan metni kopyalıyalım (public key).&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-3/1.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;7&#34;&gt;
-&lt;li&gt;Bu adımda CE instance&amp;rsquo;ımıza &amp;ldquo;public key&amp;quot;i koymak olacaktır. Bunun için &lt;a href=&#34;https://console.cloud.google.com/compute/&#34;&gt;CE Konsol&lt;/a&gt;&amp;lsquo;una gidelim. Ad kolonunda yer alan &amp;ldquo;instance-1&amp;rdquo; ismine tıklayıp, açılan ekranda &amp;ldquo;Düzenle&amp;quot;ye tılayalım.&lt;/li&gt;
+&lt;li&gt;Bu adımda CE instance&amp;rsquo;ımıza &amp;ldquo;public key&amp;quot;i koymak olacaktır. Bunun için &lt;a href=&#34;https://console.cloud.google.com/compute/&#34;&gt;CE Konsol&lt;/a&gt;&amp;lsquo;una gidelim. Ad kolonunda yer alan &amp;ldquo;instance-1&amp;rdquo; ismine tıklayıp, açılan ekranda &amp;ldquo;Düzenle&amp;quot;ye tıklayalım.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/2.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;8&#34;&gt;
@@ -420,7 +420,7 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/5.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/6.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;10&#34;&gt;
-&lt;li&gt;Son adım olarak, PuTTy uygulamasını indiriyoruz. PuTTy uygulamasını aşağıdaki resimlerdeki gibi konfigure etmeliyiz. &amp;ldquo;&lt;a href=&#34;mailto:volkanulutas@104.197.171.167&#34;&gt;volkanulutas@104.197.171.167&lt;/a&gt;&amp;rdquo; alanı için ise 2.adımda kullandığımız en son parametreyi belirtiyor. Adresi ise CE&amp;rsquo;de instance&amp;rsquo;ımızın &amp;ldquo;Harici IP&amp;rdquo; alanına denk gelmektedir. Son olarak &amp;ldquo;private key&amp;quot;i de bu bağlatıya vermeliyiz.&lt;/li&gt;
+&lt;li&gt;Son adım olarak, PuTTy uygulamasını indiriyoruz. PuTTy uygulamasını aşağıdaki resimlerdeki gibi konfigüre etmeliyiz. &amp;ldquo;&lt;a href=&#34;mailto:volkanulutas@104.197.171.167&#34;&gt;volkanulutas@104.197.171.167&lt;/a&gt;&amp;rdquo; alanı için ise 2.adımda kullandığımız en son parametreyi belirtiyor. Adresi ise CE&amp;rsquo;de instance&amp;rsquo;ımızın &amp;ldquo;Harici IP&amp;rdquo; alanına denk gelmektedir. Son olarak &amp;ldquo;private key&amp;quot;i de bu bağlantıya vermeliyiz.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-3/2.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-3/3.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
@@ -482,7 +482,7 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
                 <guid isPermaLink="true">http://localhost:1313/posts/2020-05-18-computingengine_ssh_baglantisi_macos/</guid>
                 <pubDate>Sun, 17 May 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
@@ -506,21 +506,21 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;Bu komutla birlikte sizden şifre oluşturmanızı isteyecektir, iki defa belirlediğiniz bir şifreyi giriniz. Terminal görüntüsü aşağıdaki gibi olacaktır ve masaüstünüzde &amp;ldquo;key&amp;rdquo; (private key) ve &amp;ldquo;key.pub&amp;rdquo; (public key) isminde iki dosya oluşacaktır.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/1.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Bu adımda CE instance&amp;rsquo;ımıza &amp;ldquo;public key&amp;quot;i koymak olacaktır. Bunun için &lt;a href=&#34;https://console.cloud.google.com/compute/&#34;&gt;CE Konsol&lt;/a&gt;&amp;lsquo;una gidelim. Ad kolonunda yer alan &amp;ldquo;instance-1&amp;rdquo; ismine tıklayıp, açılan ekranda &amp;ldquo;Düzenle&amp;quot;ye tılayalım.&lt;/li&gt;
+&lt;li&gt;Bu adımda CE instance&amp;rsquo;ımıza &amp;ldquo;public key&amp;quot;i koymak olacaktır. Bunun için &lt;a href=&#34;https://console.cloud.google.com/compute/&#34;&gt;CE Konsol&lt;/a&gt;&amp;lsquo;una gidelim. Ad kolonunda yer alan &amp;ldquo;instance-1&amp;rdquo; ismine tıklayıp, açılan ekranda &amp;ldquo;Düzenle&amp;quot;ye tıklayalım.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/2.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Daha sonra &amp;ldquo;SSH Anahtarları&amp;rdquo; bölümüne gelene kadar sayfada aşağıya ininiz.  &amp;ldquo;Sahip olduğunuz 0 SSH anahtarı var&amp;rdquo; metninin altında &amp;ldquo;ÖĞE EKLE&amp;rdquo; alanına tıklayınız. Bu alana oluşturduğumuz public key&amp;rsquo;imizi metin olarak yapıştıracağız.&lt;/li&gt;
+&lt;li&gt;Daha sonra &amp;ldquo;SSH Anahtarları&amp;rdquo; bölümüne gelene kadar sayfada aşağıya ininiz.  &amp;ldquo;Sahip olduğunuz 0 SSH anahtarı var&amp;rdquo; metninin altında &amp;ldquo;ÖĞE EKLE&amp;rdquo; alanına tıklayınız. Bu alana oluşturduğumuz &amp;ldquo;public key&amp;quot;imizi metin olarak yapıştıracağız.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/3.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Bu adımda masaüstünüzde oluşturduğunuz key.pub dosyasının bir editor ile açınız. (TextEdit, SublimeText ile açabilirsiniz.) Buradaki metni kopyalayıp, 4. adımda belirtilen alana yapıştırınız. Daha sonra sayfanın en altında bulunan &amp;ldquo;Kaydet&amp;rdquo; butonına basınız.&lt;/li&gt;
+&lt;li&gt;Bu adımda masaüstünüzde oluşturduğunuz key.pub dosyasının bir editor ile açınız. (TextEdit, SublimeText ile açabilirsiniz.) Buradaki metni kopyalayıp, 4. adımda belirtilen alana yapıştırınız. Daha sonra sayfanın en altında bulunan &amp;ldquo;Kaydet&amp;rdquo; butonuna basınız.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/4.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/5.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-2/6.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;Son adım olarak, aşağıdaki komutu terminale yapıştırınız. Burada public key&amp;rsquo;i masaüstüne oluşturduğumuz için bu dizini verdik, düzenleme yapmanız gerekmektedir. &amp;ldquo;&lt;a href=&#34;mailto:volkanulutas@104.197.171.167&#34;&gt;volkanulutas@104.197.171.167&lt;/a&gt;&amp;rdquo; alanı için ise 2.adımda kullandığımız en son parametreyi belirtiyor. Adresi ise CE&amp;rsquo;de instance&amp;rsquo;ımızın &amp;ldquo;Harici IP&amp;rdquo; alanına denk gelmektedir.&lt;/li&gt;
+&lt;li&gt;Son adım olarak, aşağıdaki komutu terminale yapıştırınız. Burada &amp;ldquo;public key&amp;quot;i masaüstüne oluşturduğumuz için bu dizini verdik, düzenleme yapmanız gerekmektedir. &amp;ldquo;&lt;a href=&#34;mailto:volkanulutas@104.197.171.167&#34;&gt;volkanulutas@104.197.171.167&lt;/a&gt;&amp;rdquo; alanı için ise 2.adımda kullandığımız en son parametreyi belirtiyor. Adresi ise CE&amp;rsquo;de instance&amp;rsquo;ımızın &amp;ldquo;Harici IP&amp;rdquo; alanına denk gelmektedir.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -588,24 +588,24 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
                 <guid isPermaLink="true">http://localhost:1313/posts/2020-05-10-computingengine_giris/</guid>
                 <pubDate>Sun, 10 May 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
                     <description>&lt;p&gt;Merhabalar, bu yazımda sizlere &lt;a href=&#34;https://cloud.google.com/&#34;&gt;Google Cloud Platform (GCP)&lt;/a&gt; servisinden bahsedeğim ve Compute Engine sisteminde tanımlamış olduğumuz bir makineye nasıl erişim sağlayabileceğimizi göreceğiz.&lt;/p&gt;
 &lt;h2 id=&#34;google-cloud-platform&#34;&gt;Google Cloud Platform&lt;/h2&gt;
-&lt;p&gt;GCP, Google&amp;rsquo;ın tüm bulut tabanlı servislerini içerir. Bulut tabanlı olarak veri depolama ve sunma, veri analizi ve makine öğrenimi gibi hizmetleri sunar. Bu hizmetleri &amp;ldquo;kullandıkça öde&amp;rdquo; sistemine göre sağlamaktadır. Yani siz sunmak istedğiniz bir web uygulamasını, hizmet verdiğiniz müşterilerin kullanım oranlarına göre ücretlendirir ve fiziksel olarak sizin sunucu alıp işletme maliyetinizden kurtarır. Ek olarak Google GPC ile arama, Gmail ve Youtube gibi hizmetleri içinde GPC altyapısını kullanmaktadır. GPC,  IaaS (infrastructure as a service), PaaS (platform as a service), and sunucusuz mimari (serverless computing environments) yaklaşımlarında hizmet vermektedir.&lt;/p&gt;
+&lt;p&gt;GCP, Google&amp;rsquo;ın tüm bulut tabanlı servislerini içerir. Bulut tabanlı olarak veri depolama ve sunma, veri analizi ve makine öğrenimi gibi hizmetleri sunar. Bu hizmetleri &amp;ldquo;kullandıkça öde&amp;rdquo; sistemine göre sağlamaktadır. Yani siz sunmak istediğiniz bir web uygulamasını, hizmet verdiğiniz müşterilerin kullanım oranlarına göre ücretlendirir ve fiziksel olarak sizin sunucu alıp işletme maliyetinden kurtarır. Ek olarak Google GPC ile arama, Gmail ve Youtube gibi hizmetleri içinde GPC altyapısını kullanmaktadır. GPC,  IaaS (infrastructure as a service), PaaS (platform as a service), and sunucusuz mimari (serverless computing environments) yaklaşımlarında hizmet vermektedir.&lt;/p&gt;
 &lt;h2 id=&#34;compute-engine&#34;&gt;Compute Engine&lt;/h2&gt;
-&lt;p&gt;Bu yazımızda Compute Engine (CE) sistemine odaklanacağımızı belirtmiştik. Ulaşılabilirliği çok yüksek olan bir hizmettir ve CE sayesinde kendi sunucunuza erişim sağlar gibi SSH sayesinde erişim sağlayıp istediğiniz teknolojiyi kullandığınız işletim sisteminin desteği doğrultusunda kullabilirsiniz. Örneğin, Linux tabanlı Ubuntu tercihiniz doğrultusunda SSH kullarak sisteme bağlanıp isteğiniz teknolojilerin kurulumu ile birlikte kendi uygulamanızı sunabilirsiniz. Spring Boot tabanlı, Mongo veritabanı kullanan bir docker imajı üretip burada Kubernates ile yöneterek ulaşılabilirliği, yedekliliği yüksek sistemlerinizi test edebilir veya son ürün olarak sunabilirsiniz (deploy). Daha sonraki bir yazımızda PaaS özelliğine de değinmeyi planlıyorum, burada hazır bir geliştirme ortamı sunuluyor gibi düşünebiliriz, yani platforma özgü yazılımlar ön yüklü olarak gelmektedi, bu kurulumlarla da uğraşmamaktasınız.&lt;/p&gt;
-&lt;p&gt;Sistemde temel özellikler ücretsiz olarak sunulmaktadır. Tüm özellikleri denemeniz için ise 300 dolarlık bir kredi tanımlanmaktadır. Dezavantajlı olarak görülebilecek bir özelliği ise kredi kartınızı sisteme tanımlamanız gerekmektedir; ancak Google bu konuda şeffaf davranarak sizin ne yaparsanız ücretli bir işlem yaptığınız hakkında her adımda sizi uyarmaktadır, yani deneme amaçlı veya test amaçlı olarak kullanımızda kredi kartınıza herhangi bir ücret yansıtılmamaktadır.&lt;/p&gt;
+&lt;p&gt;Bu yazımızda Compute Engine (CE) sistemine odaklanacağımızı belirtmiştik. Ulaşılabilirliği çok yüksek olan bir hizmettir ve CE sayesinde kendi sunucunuza erişim sağlar gibi SSH sayesinde erişim sağlayıp istediğiniz teknolojiyi kullandığınız işletim sisteminin desteği doğrultusunda kullanabilirsiniz. Örneğin, Linux tabanlı Ubuntu tercihiniz doğrultusunda SSH kullanarak sisteme bağlanıp isteğiniz teknolojilerin kurulumu ile birlikte kendi uygulamanızı sunabilirsiniz. Spring Boot tabanlı, Mongo veritabanı kullanan bir docker imajı üretip burada Kubernates ile yöneterek ulaşılabilirliği, yedekliliği yüksek sistemlerinizi test edebilir veya son ürün olarak sunabilirsiniz (deploy). Daha sonraki bir yazımızda PaaS özelliğine de değinmeyi planlıyorum, burada hazır bir geliştirme ortamı sunuluyor gibi düşünebiliriz, yani platforma özgü yazılımlar ön yüklü olarak gelmektedir, bu kurulumlarla da uğraşmamaktasınız.&lt;/p&gt;
+&lt;p&gt;Sistemde temel özellikler ücretsiz olarak sunulmaktadır. Tüm özellikleri denemeniz için ise 300 dolarlık bir kredi tanımlanmaktadır. Dezavantajlı olarak görülebilecek bir özelliği ise kredi kartınızı sisteme tanımlamanız gerekmektedir; ancak Google bu konuda şeffaf davranarak sizin ne yaparsanız ücretli bir işlem yaptığınız hakkında her adımda sizi uyarmaktadır, yani deneme amaçlı veya test amaçlı olarak kullanımlarda, kredi kartınıza herhangi bir ücret yansıtmamaktadır.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Compute Engine&amp;rsquo;nin En temel özelliklerinden biri yazılımcıların oluşturdukları uygulamarı test etmek veya ürün haline getirip bulutta sunmak için kullanabilecekleri bir servis olarak tanımlayabiliriz.&lt;/p&gt;
+&lt;p&gt;Compute Engine&amp;rsquo;nin En temel özelliklerinden biri yazılımcıların oluşturdukları uygulamayı test etmek veya ürün haline getirip bulutta sunmak için kullanabilecekleri bir servis olarak tanımlayabiliriz.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;compute-enginede-ücretsiz-olarak-makine-oluşturma&#34;&gt;Compute Engine&amp;rsquo;de Ücretsiz Olarak Makine Oluşturma&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://console.cloud.google.com/compute&#34;&gt;GCP&lt;/a&gt; adresine giderek Google hesabınızla giriş yapınız. Aşağıkdaki resimde görüldüğü gibi bir ekran ile karşacaksınız.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://console.cloud.google.com/compute&#34;&gt;GCP&lt;/a&gt; adresine giderek Google hesabınızla giriş yapınız. Aşağıdaki resimde görüldüğü gibi bir ekran ile karşılaşacaksınız.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-1/1.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
@@ -617,7 +617,7 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
 &lt;p&gt;Daha sonra sayfanın en altında bulunan &amp;ldquo;Oluştur&amp;rdquo; butona basarak tamamlayalım.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Belirli bir süre geçtikten sonra aşağıdaki resimde görüldüğü gibi &amp;ldquo;intance-1&amp;rdquo; isminde bir makinemiz oluşmuş olacaktır. Burada önemli bir bilgi &amp;ldquo;Harici IP&amp;rdquo; kısmında yer alan adrestir. Bu adresi kullanarak bu makineye SSH kullarak erişim sağlayacağız.&lt;/p&gt;
+&lt;p&gt;Belirli bir süre geçtikten sonra aşağıdaki resimde görüldüğü gibi &amp;ldquo;intance-1&amp;rdquo; isminde bir makinemiz oluşmuş olacaktır. Burada önemli bir bilgi &amp;ldquo;Harici IP&amp;rdquo; kısmında yer alan adrestir. Bu adresi kullanarak bu makineye SSH kullanarak erişim sağlayacağız.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gcp-ce-1/3.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
@@ -682,13 +682,13 @@ Alan adınız bulunuyorsa;&lt;/p&gt;
                 <guid isPermaLink="true">http://localhost:1313/posts/2020-05-02-maven_kurulumu_macos/</guid>
                 <pubDate>Sat, 02 May 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
                     <description>&lt;p&gt;Maven&amp;rsquo;ı MacOS işletim sistemine sahip bilgisayarınıza yüklemek için aşağıdaki adımları takip edebilirsiniz.&lt;/p&gt;
 &lt;h1 id=&#34;maven-kurulumu-kontrol-etme&#34;&gt;Maven Kurulumu Kontrol Etme&lt;/h1&gt;
-&lt;p&gt;Maven bazı MacOS versiyonlarınları önyüklü olarak gelmektedir, kontrol etmek için aşağıdaki komutu terminalde çalıştırınız.&lt;/p&gt;
+&lt;p&gt;Maven bazı MacOS versiyonlarında önyüklü olarak gelmektedir, kontrol etmek için aşağıdaki komutu terminalde çalıştırınız.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -855,7 +855,7 @@ OS name: &lt;span class=&#34;s2&#34;&gt;&amp;#34;mac os x&amp;#34;&lt;/span&gt;,
                 <guid isPermaLink="true">http://localhost:1313/posts/2020-04-23-loggerlarin-tarihcesi/</guid>
                 <pubDate>Thu, 23 Apr 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
@@ -871,7 +871,7 @@ OS name: &lt;span class=&#34;s2&#34;&gt;&amp;#34;mac os x&amp;#34;&lt;/span&gt;,
 &lt;li&gt;Exception.printStackTrace()&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Bu yapıların bir dezavantajı bulunmaktaydı. Bu log kayıtları sadece konsola yazılmaktaydı ve konsol kapatıldığında bu kayıtlara erişim sağlanamıyordu.  Şimdi bu işlemleri &amp;ldquo;File&amp;rdquo; yönetimiyle log&amp;rsquo;ları oraya kaydedebilirdik diye düşünebilirsiniz; ancak bu işlemlerdeki maliyet çok yüksek olabilmektedir ve hataya açıktır.&lt;/p&gt;
-&lt;p&gt;Günümüzün bilinirlği en yüksek loglama kütüphaneleri ise:&lt;/p&gt;
+&lt;p&gt;Günümüzün bilinirliği en yüksek loglama kütüphaneleri ise:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;log4j&lt;/li&gt;
 &lt;li&gt;logback&lt;/li&gt;
@@ -880,11 +880,11 @@ OS name: &lt;span class=&#34;s2&#34;&gt;&amp;#34;mac os x&amp;#34;&lt;/span&gt;,
 &lt;li&gt;java.util.logging&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Log4j&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1996 yılında E.U. SEMPER projesi kendi loglama altyapısını oluşturmaya karar verdi. 1999 yıllarıda, Log4j kütüphanesi doğmaya başlayadı. API’nin, Java için popüler loglama paketi haline gelmesi için pek çok çalışmalar yapıldı. Sonrasında,  bir açık kaynak lisansı olan Apache Yazılım Lisansı kapsamında dağıtımına başlanmıştır.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;JUL - java.util.logging&lt;/strong&gt;
-Log4J projelerde sıklıkla kullanılmaya başlamıştı. O zamanlar, Java Sun şirketine aitti ve Java içinde bir loglama özelliğine ihtiyaç duyduğunu hissetti, ancak doğrudan Log4j kullanmak yerine, Log4j&amp;rsquo;den esinlenerek, 2002 yılının başlarında JDK 1.4 içerisinde java.util.logging (JUL) paketini oluşturdu; ancak kısa bir süre sonra ortak bir loglama arayüzüne ihtiyaç olduğu anlaşıldı. Bir arayüz tanımı ardından herkes istediği loglama altyapısını kullanabilecekti ve tüm bu loglama altyapılarının ayarları sistem tarafıdan kolaylıkla tek bir merkezden yönetilebilekti, kullanılan her altyapı için ayrı ayrı ayar yapmak zorunda olunmayacaktı. Ayar yaparken bile tek bir standartın öğrenilmesi yetenecekti.&lt;/p&gt;
+&lt;p&gt;1996 yılında E.U. SEMPER projesi kendi loglama altyapısını oluşturmaya karar verdi. 1999 yıllarında, Log4j kütüphanesi doğmaya başladı. API’nin, Java için popüler loglama paketi haline gelmesi için pek çok çalışmalar yapıldı. Sonrasında,  bir açık kaynak lisansı olan Apache Yazılım Lisansı kapsamında dağıtımına başlanmıştır.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JUL - java.util.logging&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Log4J projelerde sıklıkla kullanılmaya başlanmıştı. O zamanlar, Java Sun şirketine aitti ve Java içinde bir loglama özelliğine ihtiyaç duyduğunu hissetti, ancak doğrudan Log4j kullanmak yerine, Log4j&amp;rsquo;den esinlenerek, 2002 yılının başlarında JDK 1.4 içerisinde java.util.logging (JUL) paketini oluşturdu; ancak kısa bir süre sonra ortak bir loglama arayüzüne ihtiyaç olduğu anlaşıldı. Bir arayüz tanımı ardından herkes istediği loglama altyapısını kullanabilecek ve tüm bu loglama altyapılarının ayarları sistem tarafından kolaylıkla tek bir merkezden yönetilebilekti, kullanılan her altyapı için ayrı ayrı ayar yapmak zorunda olunmayacaktı. Ayar yaparken bile tek bir standardın öğrenilmesi yetecekti.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Apache Commons (JCL) - Ortak Bir Loglama Altyapına Doğru&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Loglama tarafında birbirinden farklı kütüphaneler ortaya çıkmaya başlayınca 2002 yılı ortalarında Jakarta ekibi &amp;ldquo;commons logging&amp;rdquo; için JCL (Jakarta Commons Logging diğer bilinen adıyla &lt;a href=&#34;https://commons.apache.org/proper/commons-logging/&#34;&gt;Apache Commons Logging Manuel&lt;/a&gt;) projesini çıkardılar. Bu sayede eğer bir loglama altyapsı kullacaksınız projenize bu altyapı standartlarına uygun loglama altyapını ekleyebilir hale geldiniz. Yani burada ortak bir standartlaşma ortaya konularak bir log altyapısının ne yapması gerektiği ve nasıl kullanılacağı standartlaştırılmış oldu, projenizde birden fazla loglama kütüphanesi kullanabilir ve bunların hepsi için ortak ve tek bir tane konfigürasyon dosyası ile yönetim sağlayabilir hale gelmiş olduk.&lt;/p&gt;
+&lt;p&gt;Loglama tarafında birbirinden farklı kütüphaneler ortaya çıkmaya başlayınca 2002 yılı ortalarında Jakarta ekibi &amp;ldquo;commons logging&amp;rdquo; için JCL (Jakarta Commons Logging diğer bilinen adıyla &lt;a href=&#34;https://commons.apache.org/proper/commons-logging/&#34;&gt;Apache Commons Logging Manuel&lt;/a&gt;) projesini çıkardılar. Bu sayede eğer bir loglama altyapısı kullanacaksanız, projenize bu altyapı standartlarına uygun loglama altyapısı ekleyebilir hale geldiniz. Yani burada ortak bir standartlaşma ortaya konularak bir log altyapısının ne yapması gerektiği ve nasıl kullanılacağı standartlaştırılmış oldu, projenizde birden fazla loglama kütüphanesi kullanabilir ve bunların hepsi için ortak ve tek bir tane konfigürasyon dosyası ile yönetim sağlayabilir hale gelmiş olduk.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Slf4j&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Loglama kütüphanelerinde evrimleşme devam ederken, JCL yeterince iyi çözümler sunamıyordu. Kullanıcılar tarafından çözdüğünden daha fazla sorun yarattığını söyleniyordu. Ceki Gülcü (Log4j’nin de mimarı olarak bilinir ve &lt;a href=&#34;https://www.amazon.com/Complete-Log4j-Manual-Ceki-Gulcu/dp/2970036908&#34;&gt;Complete Log4j Manuel&lt;/a&gt; kitabının da yazarıdır.) kollarını sıvadı ve 2005 yılında yeni bir SLF4J (Simple Logging Facade) projesini çıkardı. Aslında adı Log4jv2 olabilecekken basitlik vurgusuyla bu ismi seçmiş olabilirler, bilinmez; ama Ceki Gülcü’nün amacı daha iyi bir ortak loglama altyapısı ortaya çıkartmaktı.&lt;/p&gt;
 &lt;p&gt;Slf4J&amp;rsquo;nin resmi sitesinde yer alan tanımına bakacak olursak,&lt;/p&gt;
@@ -902,12 +902,12 @@ Log4J projelerde sıklıkla kullanılmaya başlamıştı. O zamanlar, Java Sun �
 &lt;p&gt;&lt;strong&gt;Logback&lt;/strong&gt;
 Log4j, 1999 yılından beri sıklıkla kullanılan loglama altyapısı olmasına rağmen yeterince iyi değildi, yine yaratıcısı tarafından (Ceki Gülcü) yeni bir projeyle - logback ile değiştirildi. 2006 yılında logback görücüye çıktı. Logback, Log4j&amp;rsquo;ye göre daha iyi bir altyapı diyebiliriz çünkü yaratıcısı eski altyapının eksiklerini tespit edip, tecrübelerinin artışıyla birlikte de daha bir altyapı sunmuş oldu. Bu konuda Güclü&amp;rsquo;nün açıklamalarına &lt;a href=&#34;http://logback.qos.ch/reasonsToSwitch.html&#34;&gt;buradan&lt;/a&gt; erişebilirsiniz.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Günümüz&lt;/strong&gt;
-Günümüze baktığımızda bir çok loglama API&amp;rsquo;sı bulunuyor burada bir kaos ortamı bulunuyor; ancak iki adet ortaklaşma kütüphanesi (commons-logging ve slf4j) sayesinde istediğiniz loglama altyapsını rahatlıkla kullanabiliyoruz diyebiliriz. Projemizi geliştirirken kullandığımız birçok farklı kütüphaneden faydalanıyoruz, hepsinin kullandığı ayrı loglama altyapıları olabiliyor. &amp;ldquo;Classpath&amp;quot;imizde birbirinde farklı bir sürü loglama altyapısı bulunabiliyor, maven sayesinde doğru versiyonları bulabiliyoruz.&lt;/p&gt;
+Günümüze baktığımızda birçok loglama API&amp;rsquo;sı bulunuyor burada bir kaos ortamı bulunuyor; ancak iki adet ortaklaşma kütüphanesi (commons-logging ve slf4j) sayesinde istediğiniz loglama altyapsını rahatlıkla kullanabiliyoruz diyebiliriz. Projemizi geliştirirken kullandığımız birçok farklı kütüphaneden faydalanıyoruz, hepsinin kullandığı ayrı loglama altyapıları olabiliyor. &amp;ldquo;Classpath&amp;quot;imizde birbirinde farklı bir sürü loglama altyapısı bulunabiliyor, maven sayesinde doğru versiyonları bulabiliyoruz.&lt;/p&gt;
 &lt;p&gt;Peki doğru çözüm nedir?
 En kısa yoldan slf4j ve logback kullanmaktır diyebiliriz.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Son olarak,&lt;/strong&gt;
-Şimdilerde loglama kütüphaneleri sayesinde, ortaklaştırılmasının (ata bir yapıdan türetilmesi) sağlanmasıyla birlikte loglar dosya sisteminde saklanabilir, e-posta ile gönderilebilir, hatta bulut tabanları sistemler yardımıyla o log&amp;rsquo;tan (hata veya uyarıdan) sorumlu kişiye telefon araması yapma yeteneğine bile sahiptir. Veritabanlarına kaydedilmiş loglar, veri madenciliği uygulamalarıyla anlamlandırılarak sistemin zayıflıkları, hatanın çok yapıldığı yerler tespit edilerek canlı ortamda bulunan bu sorunlar çözülebilir hale geldi.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Kaynakça&lt;/strong&gt;&lt;/p&gt;
+Şimdilerde loglama kütüphaneleri sayesinde, ortaklaştırılmasının (ata bir yapıdan türetilmesi) sağlanmasıyla birlikte loglar dosya sisteminde saklanabilir, e-posta ile gönderilebilir, hatta bulut tabanlı sistemler yardımıyla o log&amp;rsquo;tan (hata veya uyarıdan) sorumlu kişiye telefon araması yapma yeteneğine bile sahiptir. Veritabanlarına kaydedilmiş loglar, veri madenciliği uygulamalarıyla anlamlandırılarak sistemin zayıflıkları, hatanın çok yapıldığı yerler tespit edilerek canlı ortamda bulunan bu sorunlar çözülebilir hale geldi.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Kaynaklar&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.javacodegeeks.com/2011/09/java-logging-mess.html&#34;&gt;[javacodegeeks, Bozhidar Bozhanov]&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.qos.ch/&#34;&gt;[Şirket Sitesi, Ceki Gülcü]&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.frankel.ch/thoughts-on-java-logging-and-slf4j/&#34;&gt;[Blog, Nicolas Fränkel]&lt;/a&gt;&lt;/p&gt;
@@ -972,7 +972,7 @@ En kısa yoldan slf4j ve logback kullanmaktır diyebiliriz.&lt;/p&gt;
                 <guid isPermaLink="true">http://localhost:1313/posts/2019-10-07-latex-kurulumu-macos/</guid>
                 <pubDate>Mon, 07 Oct 2019 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
@@ -993,7 +993,7 @@ En kısa yoldan slf4j ve logback kullanmaktır diyebiliriz.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;/images/latex-kurulumu-mac/2.png&#34; alt=&#34;metin&#34;&gt;&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Kurulum tamamlanınca aşağıdaki gibi bir ekran (MikTex Console) belirecektir. Burada aşağıda belirtilen iki seçenekten size uygun olanı seçeniz.&lt;/li&gt;
+&lt;li&gt;Kurulum tamamlanınca aşağıdaki gibi bir ekran (MikTex Console) belirecektir. Burada aşağıda belirtilen iki seçenekten size uygun olanı seçiniz.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;Burada &amp;ldquo;Finish Private Setup&amp;rdquo; seçeceğini seçebilirsiniz. (Bu seçenek sadece ilgili hesap için kurulumu sağlayacaktır. )&lt;/li&gt;
@@ -1071,7 +1071,7 @@ En kısa yoldan slf4j ve logback kullanmaktır diyebiliriz.&lt;/p&gt;
                 <guid isPermaLink="true">http://localhost:1313/posts/2019-10-07-latex-kurulumu/</guid>
                 <pubDate>Mon, 07 Oct 2019 00:00:00 &#43;0000</pubDate>
                 
-                    <author>volkanulutas@gmail.com (volkanulutas)</author>
+                    <author>volkanulutas@gmail.com (Volkan Ulutaş)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
@@ -1079,7 +1079,7 @@ En kısa yoldan slf4j ve logback kullanmaktır diyebiliriz.&lt;/p&gt;
 &lt;h2 id=&#34;1-gereksinimler&#34;&gt;1. Gereksinimler&lt;/h2&gt;
 &lt;p&gt;İlk olarak, aşağıdaki yazılımları indirip, kurulumlarını yapmalısınız.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Windows mimarinize uygun türü seçmeyi unutmayınız (x86/x64).&lt;/p&gt;
+&lt;p&gt;Windows mimarisine uygun türü seçmeyi unutmayınız (x86/x64).&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;http://strawberryperl.com/&#34;&gt;StrawberryPerl&lt;/a&gt;&lt;/li&gt;
