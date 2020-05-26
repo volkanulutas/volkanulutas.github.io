@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Tue, 26 May 2020 17:26:32 &#43;0300</lastBuildDate>
+        <lastBuildDate>Tue, 26 May 2020 20:16:41 &#43;0300</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="http://volkanulutas.com/rss.xml" />
         
@@ -103,7 +103,7 @@ react-native run-android
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;http://volkanulutas.com/images/react-native-navigation/github.jpg&#34; height=&#34;150&#34; width=&#34;300&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Bu aşamaya kadar kodumuzu &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/volkanulutas/blog-tutorials/tree/ebfec43487241bac1314de81ea3121f2a6c43f9e&#34;&gt;buradan&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt; inceleyebilirsiniz.&lt;/p&gt;
-&lt;h2 id=&#34;3-react-natıve-navıgation-kütüphanesinin-kurulumu&#34;&gt;3.) react-natıve-navıgation Kütüphanesinin Kurulumu:&lt;/h2&gt;
+&lt;h2 id=&#34;3-react-natıve-navıgatıon-kütüphanesinin-kurulumu&#34;&gt;3.) react-natıve-navıgatıon Kütüphanesinin Kurulumu:&lt;/h2&gt;
 &lt;p&gt;Ana dizine gidelim.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -399,7 +399,7 @@ Visual Studio Code açılır. Daha sonra &amp;ldquo;File/Open&amp;rdquo; menüs�
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;415-ayarlar-ekranı-settingscreentsx&#34;&gt;4.1.5.) Ayarlar Ekranı (SettingScreen.tsx)&lt;/h2&gt;
-&lt;p&gt;Visual Studio Code&amp;rsquo;da &amp;ldquo;src/container/settig&amp;rdquo; klasörünü seçerek, &amp;ldquo;New File&amp;rdquo; diyelim ve &amp;ldquo;SettingScreen.tsx&amp;rdquo; ismiyle adlandıralım. Daha sonra aşağıdaki kodu bu dosyaya yapıştıralım.&lt;/p&gt;
+&lt;p&gt;Visual Studio Code&amp;rsquo;da &amp;ldquo;src/container/setting&amp;rdquo; klasörünü seçerek, &amp;ldquo;New File&amp;rdquo; diyelim ve &amp;ldquo;SettingScreen.tsx&amp;rdquo; ismiyle adlandıralım. Daha sonra aşağıdaki kodu bu dosyaya yapıştıralım.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -543,7 +543,7 @@ Visual Studio Code açılır. Daha sonra &amp;ldquo;File/Open&amp;rdquo; menüs�
   &lt;span class=&#34;kr&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;StackNavigaiton&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;StackNavigation yapısını, WEB tarayıcınızda olduğu gibi gidilen bir sitedeki &amp;ldquo;Geri/İleri&amp;rdquo; butonlarına bahsedebiliriz. Site içerisinde tıkladığınız her bağlantı sonrasında &amp;ldquo;Geri&amp;rdquo; butonuyla bir önceki sayfaya gidilebilir. &amp;ldquo;StackNavigation&amp;quot;de aynı şekilde bir sayfadan diğerine gittiğimizde &amp;ldquo;Geri&amp;rdquo; butonuyla bir önceki ekrana geçişimizi sağlar. Genellikle detay ekranlarında kullanılır. Bizim projemizden örnek verecek olursak, &amp;ldquo;Mesajlar&amp;rdquo; ekranında arkadaş listenizin gösterildiğini düşünelim, herhangi bir arkdaşınızın ismine tıkladığınızda açılan &amp;ldquo;Mesajlaşma&amp;rdquo; ekranı &amp;ldquo;detay&amp;rdquo; ekranı olarak düşünülebilir. Yine &amp;ldquo;Geri&amp;rdquo; butonuyla arkadaş listenize gelebileceksiniz.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;StackNavigation yapısını, WEB tarayıcınızda olduğu gibi gidilen bir sitedeki &amp;ldquo;Geri/İleri&amp;rdquo; butonlarına bahsedebiliriz. Site içerisinde tıkladığınız her bağlantı sonrasında &amp;ldquo;Geri&amp;rdquo; butonuyla bir önceki sayfaya gidilebilir. &amp;ldquo;StackNavigation&amp;quot;de aynı şekilde bir sayfadan diğerine gittiğimizde &amp;ldquo;Geri&amp;rdquo; butonuyla bir önceki ekrana geçişimizi sağlar. Genellikle detay ekranlarında kullanılır. Bizim projemizden örnek verecek olursak, &amp;ldquo;Mesajlar&amp;rdquo; ekranında arkadaş listenizin gösterildiğini düşünelim, herhangi bir arkdaşınızın ismine tıklandığında açılan &amp;ldquo;Mesajlaşma&amp;rdquo; ekranı &amp;ldquo;detay&amp;rdquo; ekranı olarak düşünülebilir. Yine &amp;ldquo;Geri&amp;rdquo; butonuyla arkadaş listenize gelebileceksiniz.&lt;/p&gt;
 &lt;p&gt;Burada &amp;ldquo;import&amp;quot;larımızı yapıyoruz. Detay ekranımızı &amp;ldquo;stack&amp;rdquo; yapısında kullacağız. Ana ekranımız  &amp;ldquo;TabNavigation&amp;rdquo; olacaktır. Detay ekranımız ise &amp;ldquo;Details&amp;rdquo; sınıfı olacaktır ve TabNavigation içerinde yer alan sınıfların (MessageScreen.tsx, ProfileScreen.tsx gibi) onClick metodunda &amp;ldquo;Details&amp;rdquo; ekranını açıyoruz. &amp;ldquo;StackNavigation&amp;quot;a eklediğimiz &amp;ldquo;Details&amp;rdquo; sınıfı sayesinde &amp;ldquo;Geri&amp;rdquo; kontrolünü oluşturmuş olduk.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -661,7 +661,7 @@ Visual Studio Code açılır. Daha sonra &amp;ldquo;File/Open&amp;rdquo; menüs�
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Tab&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;createBottomTabNavigator&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;return fonsiyonu içinde o sınıfta yaptığımız tasarımı döndüğümüzü belirtmiştik, şimdi burada da navigation tasarımızı aşağıdaki gibi tasarlayıp dönüyoruz. Tab.Screen alanının &amp;ldquo;name&amp;rdquo; alanında ilgili &amp;ldquo;tab&amp;quot;ımızın görünen adını vermiş oluyoruz, &amp;ldquo;component&amp;rdquo; olarak ise import ettiğimiz ekranlardan hangisinin tıklanıldığında gidileceğini belirtmiş olduk.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;return fonksiyonu içinde o sınıfta yaptığımız tasarımı döndüğümüzü belirtmiştik, şimdi burada da navigation tasarımızı aşağıdaki gibi tasarlayıp dönüyoruz. Tab.Screen alanının &amp;ldquo;name&amp;rdquo; alanında ilgili &amp;ldquo;tab&amp;quot;ımızın görünen adını vermiş oluyoruz, &amp;ldquo;component&amp;rdquo; olarak ise import ettiğimiz ekranlardan hangisinin tıklandığında gidileceğini belirtmiş olduk.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -716,7 +716,7 @@ Visual Studio Code açılır. Daha sonra &amp;ldquo;File/Open&amp;rdquo; menüs�
 &lt;span class=&#34;kr&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;default&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;App&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Son olarak projemizi tamamladığımızda emulatörlerde aşağıdaki gibi projemizi oluşturmuş olduk.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;Son olarak projemizi tamamladığımızda emülatörlerde aşağıdaki gibi projemizi oluşturmuş olduk.&lt;/p&gt;
 &lt;img src=&#34;http://volkanulutas.com/images/react-native-navigation/3.png&#34; height=&#34;600&#34; width=&#34;600&#34;&gt;
 &lt;img src=&#34;http://volkanulutas.com/images/react-native-navigation/4.png&#34; height=&#34;600&#34; width=&#34;600&#34;&gt;
 &lt;h2 id=&#34;71-projeye-gıthub-üzerinden-erişim-ve-çalıştırma&#34;&gt;7.1.) Projeye Gıthub Üzerinden Erişim ve Çalıştırma:&lt;/h2&gt;
