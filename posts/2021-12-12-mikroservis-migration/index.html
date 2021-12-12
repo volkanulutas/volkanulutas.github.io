@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.89.4" /><meta name="theme-color" content="#fff" />
+        <script>
+            const userPrefers = localStorage.getItem('theme');
+            if (userPrefers === 'dark') {
+                changeModeMeta('dark');
+            } else if (userPrefers === 'light') {
+                changeModeMeta('light');
+            }
+            function changeModeMeta(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+            }
+        </script>
+
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>AIAC&#39;2021 Makalemiz Yayınlandı! | Volkan Ulutaş</title>
+
+    <link rel="stylesheet" href="/css/meme.min.4893697866daffab9b878d1a93c095bfaa240e2ebe2e60b3d7040620bc64cb81.css" integrity="sha256-SJNpeGba/6ubh40ak8CVv6okDi6&#43;LmCz1wQGILxky4E=" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="map[name:Volkan Ulutaş]" /><meta name="description" content="Merhabalar, AIAC&#39;21&amp;rsquo;de (Ankara International Aerospace Conference) TUSAŞ&amp;rsquo;ta yapmış olduğumuz çalışmaların bir özeti olarak yayınlanan ve sunumunu yapmış olduğumuz, &amp;ldquo;Uzay Yer Yazılımlarında Monolitik Mimariden Mikroservis Mimarisine Geçiş&amp;rdquo; makalemize buradan ulaşabilirsiniz. Ayrıca tam metni de aşağıdaki gibidir, keyifli okumalar.
+ABSTRACT This article reports the experiences and lessons learned during the incremental migration to the microservices architecture of the Monitoring and Control Software (MCS), which is developed in a monolithic architecture by Turkish Aerospace Inc." />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Volkan Ulutaş" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Volkan Ulutaş" />
+    <meta name="msapplication-starturl" content="../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2021-12-12T00:00:00+00:00",
+        "dateModified": "2021-12-12T17:03:56+03:00",
+        "url": "http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/",
+        "headline": "AIAC'2021 Makalemiz Yayınlandı!",
+        "description": "Merhabalar, AIAC'21\u0026rsquo;de (Ankara International Aerospace Conference) TUSAŞ\u0026rsquo;ta yapmış olduğumuz çalışmaların bir özeti olarak yayınlanan ve sunumunu yapmış olduğumuz, \u0026ldquo;Uzay Yer Yazılımlarında Monolitik Mimariden Mikroservis Mimarisine Geçiş\u0026rdquo; makalemize buradan ulaşabilirsiniz. Ayrıca tam metni de aşağıdaki gibidir, keyifli okumalar.\nABSTRACT This article reports the experiences and lessons learned during the incremental migration to the microservices architecture of the Monitoring and Control Software (MCS), which is developed in a monolithic architecture by Turkish Aerospace Inc.",
+        "inLanguage" : "tr",
+        "articleSection": "posts",
+        "wordCount":  5246 ,
+        "image": ["http://volkanulutas.com/images/mikroservismakale/1.jpeg","http://volkanulutas.com/images/mikroservismakale/2.jpeg","http://volkanulutas.com/images/mikroservismakale/3.jpeg"],
+        "author": {
+            "@type": "Person",
+            "description": "Software Engineer",
+            "email": "volkanulutas@gmail.com",
+            "image": "http://volkanulutas.com/icons/space.png",
+            "url": "http://volkanulutas.com",
+            "name": "Volkan Ulutaş"
+        },
+        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Volkan Ulutaş",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http://volkanulutas.com/icons/space.png"
+            },
+            "url": "http://volkanulutas.com/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "http://volkanulutas.com/"
+        }
+    }
+</script>
+
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+
+
+<meta name="twitter:site" content="@volkanulutas" />
+<meta name="twitter:creator" content="@volkaulutas" />
+
+    
+
+
+
+<meta property="og:title" content="AIAC&#39;2021 Makalemiz Yayınlandı!" />
+<meta property="og:description" content="Merhabalar, AIAC&#39;21&amp;rsquo;de (Ankara International Aerospace Conference) TUSAŞ&amp;rsquo;ta yapmış olduğumuz çalışmaların bir özeti olarak yayınlanan ve sunumunu yapmış olduğumuz, &amp;ldquo;Uzay Yer Yazılımlarında Monolitik Mimariden Mikroservis Mimarisine Geçiş&amp;rdquo; makalemize buradan ulaşabilirsiniz. Ayrıca tam metni de aşağıdaki gibidir, keyifli okumalar.
+ABSTRACT This article reports the experiences and lessons learned during the incremental migration to the microservices architecture of the Monitoring and Control Software (MCS), which is developed in a monolithic architecture by Turkish Aerospace Inc." />
+<meta property="og:url" content="http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/" />
+<meta property="og:site_name" content="Volkan Ulutaş" />
+<meta property="og:locale" content="tr" /><meta property="og:image" content="http://volkanulutas.com/images/mikroservismakale/1.jpeg" />
+<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-12-12T00:00:00&#43;00:00" />
+    <meta property="article:modified_time" content="2021-12-12T17:03:56&#43;03:00" />
+    
+    <meta property="article:section" content="posts" />
+
+
+        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+
+        
+
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38639110-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-38639110-2');
+    </script>
+
+
+
+        
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "565-199-2506",
+        enable_page_level_ads: true
+    });
+</script>
+
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header" data-scroll-header>
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">Volkan Ulutaş</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon archive"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">Arşiv</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">Kategoriler</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">Etiketler</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">Hakkında</span></a>
+                </li>
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+            
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
+
+
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "http:\/\/volkanulutas.com\/"
+    },
+    "articleSection" : "posts",
+    "name" : "AIAC\u00272021 Makalemiz Yayınlandı!",
+    "headline" : "AIAC\u00272021 Makalemiz Yayınlandı!",
+    "description" : "Merhabalar, AIAC\u002721\u0026rsquo;de (Ankara International Aerospace Conference) TUSAŞ\u0026rsquo;ta yapmış olduğumuz çalışmaların bir özeti olarak yayınlanan ve sunumunu yapmış olduğumuz, \u0026ldquo;Uzay Yer Yazılımlarında Monolitik Mimariden Mikroservis Mimarisine Geçiş\u0026rdquo; makalemize buradan ulaşabilirsiniz. Ayrıca tam metni de aşağıdaki gibidir, keyifli okumalar.\nABSTRACT This article reports the experiences and lessons learned during the incremental migration to the microservices architecture of the Monitoring and Control Software (MCS), which is developed in a monolithic architecture by Turkish Aerospace Inc.",
+    "inLanguage" : "en-US",
+    "author" : "\/icons\/space.pngvolkanulutas@gmail.comSoftware EngineerVolkan Ulutaşvolkaulutashttp:\/\/volkanulutas.com",
+    "creator" : "\/icons\/space.pngvolkanulutas@gmail.comSoftware EngineerVolkan Ulutaşvolkaulutashttp:\/\/volkanulutas.com",
+    "publisher": "\/icons\/space.pngvolkanulutas@gmail.comSoftware EngineerVolkan Ulutaşvolkaulutashttp:\/\/volkanulutas.com",
+    "accountablePerson" : "\/icons\/space.pngvolkanulutas@gmail.comSoftware EngineerVolkan Ulutaşvolkaulutashttp:\/\/volkanulutas.com",
+    "copyrightHolder" : "\/icons\/space.pngvolkanulutas@gmail.comSoftware EngineerVolkan Ulutaşvolkaulutashttp:\/\/volkanulutas.com",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-12-12 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-12-12 00:00:00 \u002b0000 UTC",
+    "url" : "http:\/\/volkanulutas.com\/posts\/2021-12-12-mikroservis-migration\/",
+    "wordCount" : "5246",
+    "keywords" : [ "Spring, Mikroservis, Monolitik, Monotikten Mikroservise Geçiş, TUSAŞ, Uzay Sistemleri, Yer Yazılımları","Blog" ]
+}
+</script>
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post" data-small-caps="true" data-align="default" data-type="posts" data-toc-num="true">
+
+            <h1 class="post-title">AIAC&#39;2021 Makalemiz Yayınlandı!</h1>
+
+            
+
+            
+                
+            
+
+            
+                
+
+<div class="post-meta">
+    
+        
+        <time datetime="2021-12-12T00:00:00&#43;00:00" class="post-meta-item published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2021.12.12</time>
+    
+    
+        
+        <time datetime="2021-12-12T17:03:56&#43;03:00" class="post-meta-item modified"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2021.12.12</time>
+    
+    
+    
+        
+        
+        
+    
+    
+        
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;5246</span>
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;25&nbsp;dakika</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body">
+              <img src="/images/mikroservismakale/1.jpeg" height="600" width="800">
+<p style="text-indent:0"><span class="drop-cap">M</span>erhabalar, AIAC'21&rsquo;de (Ankara International Aerospace Conference) TUSAŞ&rsquo;ta yapmış olduğumuz çalışmaların bir özeti olarak yayınlanan ve sunumunu yapmış olduğumuz, &ldquo;Uzay Yer Yazılımlarında Monolitik Mimariden Mikroservis Mimarisine Geçiş&rdquo; makalemize <a href="http://aiac.ae.metu.edu.tr/paper.php?No=AIAC-2021-137" target="_blank" rel="noopener">buradan</a> ulaşabilirsiniz. Ayrıca tam metni de aşağıdaki gibidir, keyifli okumalar.</p>
+<h1 id="abstract"><a href="#abstract" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>ABSTRACT</h1>
+<p>This article reports the experiences and lessons learned during the incremental migration to
+the microservices architecture of the Monitoring and Control Software (MCS), which is
+developed in a monolithic architecture by Turkish Aerospace Inc. The problems encountered
+in the monolithic architecture, the experiences about how these problems are solved with the
+microservices architecture, the decisions made and technology choices are explained. This
+study covers the migration steps taken to migrate the MCS to the microservices architecture;
+it was aimed to explain the separation of the modules (functional decomposition) in the
+existing architecture into microservices using domain-driven design, flexibility, accessibility,
+scalability, and distribution.</p>
+<h1 id="introduction"><a href="#introduction" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>INTRODUCTION</h1>
+<p>The Monitoring and Control Software is a complex application that requires high level of
+domain knowledge, may contain more than one programming language, and is developed
+using monolithic architecture by more than one team. When software developers need to add
+a new feature to the system, they need to learn the entire codebase, and analyze its impact
+on other modules. When the software, designed with monolithic architecture, becomes more
+complex, maintenance and managing costs increase. [Furda, 2018]
+In microservices architecture, by decomposition of the services according to the domain
+knowledge, it is possible to develop reliable and robust software. Moreover, usage of
+microservices architecture reduces the adaptation time of a software developer to the project
+[Evans, 2003].</p>
+<p>A new software developer learns the structure of the services divided into small parts instead
+of learning the entire codebase after joining the project. Another factor that facilitates project
+management process is that software project managers divide human resources into teams
+according to the domain [ECSS-E-ST-40C, 2009].</p>
+<p>For projects that require expertise such as satellite management systems, dividing the
+software into small services reduces complexity, cost of development, testing, and
+maintenance. During the lifetime of the satellite which has limited resources, failures in the
+ground software must be fixed in a short time so that they do not affect satellite operations. It
+takes time to resolve the errors and analyze the impacts of the errors on software designed
+in a monolithic architecture. All the tests of the application should be rerun and all the
+software should be updated in the production environment. This will cause the system to be
+interrupted during the system update. In microservices architecture, after the source of the
+error is identified and the solution is implemented, only the tests of the related service should
+be run and source code should be deployed to the production environment. During the
+update of the related service, the rest of the system is not affected and the operations remain
+uninterrupted.</p>
+<p>It may be necessary to use different programming languages for tasks which have different
+requirements such as performance, security, and environment. It is difficult to use different
+programming languages in software developed in a monolithic architecture. It becomes
+possible to develop each service in different languages in the microservices architecture, as
+the services can work independently from each other. Thus, dependency on a programming
+language is reduced and selection of problem-specific language and technology can be
+made. A similar situation applies to databases. Since each service stores its data on its own
+database, it is possible to select the database technology of the services according to non -
+functional requirements. For example, using a NoSQL database in one microservice may be
+efficient, while a relational database for another service may provide better results. In this
+way, it is possible to use problem-specific technologies by eliminating dependencies on any
+particular technology.</p>
+<h1 id="method"><a href="#method" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>METHOD</h1>
+<h1 id="monolithic-architecture"><a href="#monolithic-architecture" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Monolithic Architecture</h1>
+<p>A monolithic architecture is built as a single, self-contained unit where all business logic and
+components are combined in a single application which are designed to handle multiple
+tasks such as processing telemetry data which is retrieved from satellite, handling
+telecommand data which is sent from ground software to satellite, managing event data and
+generating space system model (ex. XTCE data). All domain-driven functionality is enclosed
+into a single application whose modules cannot be run separately. This type of design is
+tightly-coupled and all code exists inside a single codebase which means that the entire
+application is deployed at the same time, and scaling is achieved by adding additional
+machines horizontally with the help of a load-balancer [Lewis and Fowler, 2014]. Although
+deployment time and complexity is low, lots of drawbacks occur when the application
+becomes larger and the team grows in size:</p>
+<ul>
+<li>Intelligibility</li>
+<li>Manageability</li>
+<li>Deployment</li>
+<li>Scalability</li>
+<li>Commitment to technology stack</li>
+<li>Learning curve difficulty</li>
+<li>Single point of failures</li>
+<li>Testing activities required long time</li>
+</ul>
+<p>Software developed in accordance with monolithic architecture are generally developed
+using client-server and a common database. A relational database, server application and
+desktop client applications have been developed with a similar approach in satellite ground
+software.</p>
+<img src="/images/mikroservismakale/2.jpeg" height="600" width="800">
+Figure 1: Monolithic architecture of MCS
+<h1 id="microservices"><a href="#microservices" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Microservices</h1>
+<p>Microservices are an architectural and organizational approach to software development
+where software is composed of small independent services that communicate with over
+lightweight technologies (e.g. HTTP API, AMQP.) [Lewis and Fowler, 2014] Because of
+their small size, they are easier to manage and more fault-tolerant, as a single service failure
+will not bring the entire system down, as a monolithic design would. As a result, this design
+style enables for the development of architectures that are flexible, modular, and easy to
+adapt.</p>
+<ul>
+<li>Flexibility</li>
+<li>Resilience</li>
+<li>Scalable</li>
+<li>Deployment</li>
+<li>Free to choose technology stack</li>
+<li>Ease of learning curve</li>
+</ul>
+<p>Microservices solve these problems by allowing separate development teams to build and
+deploy small services; the resulting flexibility allows teams to focus on enhancing each
+service and improving business value. Thus, DevOps (Development and Operations) and
+Continuous Delivery are a good fit for microservices architectures in practice. [Fowler, 2016.]</p>
+<p>Migrating from a monolithic system into microservices is a type of software modernization,
+also known as application modernization, platform modernization or legacy modernization
+that conversion, rewriting or porting of a legacy system to modern architecture, software
+libraries, protocol or hardware. [Chiang, 2006]
+Migration of Monitoring and Control Software to microservices architecture
+There are four software modernization techniques which can be applied when migrating from
+monolithic systems to microservices:</p>
+<ul>
+<li>Big Bang Approach</li>
+<li>Adding New Feature as a Separate Service</li>
+<li>Split Frontend and Backend</li>
+<li>Extract Services</li>
+</ul>
+<h1 id="big-bang-approach"><a href="#big-bang-approach" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Big Bang Approach:</h1>
+<p>Big Bang approach is defined as creating a new application from scratch. It seems simple to
+migrate in this way but there are some problems that need to be taken into account. This
+approach is based on rewriting the entire system. Therefore, it will take undesired amounts of
+time and effort. Because of these reasons, there are alternative strategies that propose
+refactoring the system incrementally which are more common.</p>
+<h1 id="adding-new-feature-as-a-separate-service"><a href="#adding-new-feature-as-a-separate-service" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Adding New Feature as a Separate Service:</h1>
+<p>The decision to migrate from a monolith to a microservices architecture is often made
+because of the difficulties experienced in managing the monolithic system. As the monolithic
+system grows adding a new feature becomes more difficult. This approach propo ses
+developing the new feature as a separate microservice rather than adding into a monolithic
+application. With this approach the new system consists of the unchanged legacy monolith
+and a newly created microservice with the added feature. Such a system requires a request
+router to route the requests regarding the new feature to the microservice and the rest of the
+requests to the legacy monolith. The request router handles the HTTP requests similar to the
+API Gateway. The new microservice can communicate with the monolith by invoking a
+remote API, access the monolith’s database directly or copy of the corresponding monolith
+data and synchronize between applications. This approach prevents the monolithic
+application from becoming more complex and allows teams to gain experience with
+microservices architecture but not solve the problems arising from the monolith. [Richardson,
+2016]. This approach can be considered as an initial strategy for migrating from a monolith to
+a microservices architecture.</p>
+<p>Long-term archive service is responsible for the storage and management of long-term data
+and also serves data to the client application in the MCS. Long-term archive service was a
+new feature that needed to be developed. It was developed with this technique as a separate
+microservice and integrated with the monolith.</p>
+<h1 id="split-frontend-and-backend"><a href="#split-frontend-and-backend" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Split Frontend and Backend:</h1>
+<p>An enterprise application usually consists of three layers. The presentation layer has the user
+interfaces that the user can use to interact with the application. It can also handle HTTP
+requests. Business logic layer is responsible for processing the user inputs. It also serves as
+a bridge between the presentation layer and the data-access layer. This layer has domain
+specific logic. The data access layer is responsible for accessing the data which is stored in
+the database and data from the message brokers and providing this data to the business
+logic layer.</p>
+<p>This modernization strategy suggests separating the presentation layer from the
+business logic and data access layers. This allows the teams to develop and test easily both
+the frontend and backend. After splitting the frontend and backend into two applications,
+remote APIs must be implemented to enable communication between them. As in the first
+strategy this is only a step for migrating from a monolith to a microservice because these two
+applications could still become a monolith.</p>
+<p>The client side of the MCS was developed as a desktop application and has common
+dependencies and data models with the server side. Based on this technique, the client side
+and the server side were separated from each other and REST APIs were developed for
+their communication. This separation is also the first step of developing the client side as a
+web application with the new technologies.</p>
+<h1 id="extract-services"><a href="#extract-services" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Extract Services:</h1>
+<p>In monolithic architecture there are many modules in the application. These modules could
+be microservice candidates while migrating the architecture from monolith to microservice.
+There are some techniques for choosing and prioritizing the modules that need to be
+extracted from a monolith as a microservice. As a starting point it will be a good choice to
+start with the smaller and simple modules rather than the complex ones. Once the extraction
+starts from the simple modules the monolith starts to shrink and the teams start to gain
+experience on microservices architecture. Modification frequency on the module is an
+important sign for choosing the modules to extract. If there are too many changes or planned
+feature additions on the module, there will be positive impact on development time and effort
+after extracting that module to a standalone microservice. In addition to these techniques,
+modules could be chosen according to their system requirements or availability
+requirements. For example, if the module has a task that requires too much memory or CPU
+then deploying that module as a standalone service will be important when considering
+scalability and availability concerns.</p>
+<p>After determining the modules to be extracted, defining an interface between the extracted
+service and the monolith is the first step. Implementing and refactoring domain-specific parts
+may be difficult because of the dependencies between modules and data models but when
+the interface is defined clearly these parts become easier to implement.
+All the modules in the MCS monolithic architecture were analyzed, prioritized and extracted
+with this technique while migrating from monolithic architecture to microservices architecture.
+The migration from monolithic to the microservices architecture is planned in four stages.
+In the first stage, researches have been conducted on usage of the auxiliary services and
+technologies in the microservices architecture. As a result of these researches, it was
+decided to use REST (Representational State Transfer) API for simultaneous messaging and
+AMQP (Advanced Message Queue Protocol) technology for asynchronous inter-microservice
+communication.</p>
+<p>Unlike the monolithic architecture, multiple services on the server side need to communicate
+with each other and the client side in the microservices architecture. A router is needed to
+avoid the uncertainty of which service should respond to a request sent by the client. As a
+result of the researches carried out at the first stage, it was decided to use API-Gateway as a
+router. API-Gateway allows the requests received from the client to be routed to the relevant
+microservices through the REST interface. Thanks to the identification and authorization
+capability of API-Gateway, the requests from the client are authorized and directed to the
+relevant microservice. The requests from unauthorized users are rejected.
+API Gateway is responsible for request routing. All the requests made by the client go
+through the API Gateway. After that, the API Gateway routes requests to the appropriate
+microservice. However, at this point, a problem about checking whether the services were up
+or not was encountered. Service Discovery allows us to get the health information of the
+microservices on the server-side and routes the requests to the microservices that are
+running. When the microservices are ready to operate, they are registered to Service
+Discovery, which runs redundantly in the system as an independent service. Service Discovery reports server states by periodically checking whether applications are running or not.</p>
+<p>In the second stage, the MCS was developed according to the principles of domain-driven
+design, and the microservices architecture shown in Figure 2.</p>
+<img src="/images/mikroservismakale/3.jpeg" height="600" width="800">
+ Figure 2: Microservices architecture of the MCS and it’s technology stack
+<p>The determination of the complexity of the services to be included is another problem
+encountered during the migration from a monolithic architecture to a microservices
+architecture. The main goal of microservices architecture is to separate the system into
+software components focused on a single purpose that is independent of each other
+[Newman, 2015]. In systems such as MCS where multiple tasks (e.g. telemetry processing,
+telecommand generation, logging, archiving) are performed sequentially in a chain structure.
+It is necessary to decide which stages of these tasks should be developed as separate
+services. One solution is to develop a separate microservice for all the stages. However, in
+this way, there may be excessive amount of services in the system. This will increase the
+complexity of management, distribution, and inter-communication with other microservices. It
+will contradict with the principle of increasing simplicity and clarity, which is one of the
+starting points of the microservices architecture approach. Therefore, it would be more
+appropriate to divide monoliths according to the purpose of the use of the software. Using the
+domain-driven design model and the migration strategies which are mentioned previously,
+the MCS is divided into the following microservices:</p>
+<p>TM Service (Telemetry Service): It is the service where the telemetry data is received from
+the TM I/O service (Telemetry Input / Output service). The telemetry is decoded, processed,
+and served to the client application and other services that need this data according to the
+definitions that are provided by the Space Model Service.
+TM I/O Service (Telemetry Input / Output Service): It is the service in which raw data are
+received from the satellite. TM I/O service establishes a connection with the SLE (Space
+Link Extension) service to communicate with the satellite. TM I/O service is also responsible
+for the storing of raw data.</p>
+<p>SLE Service (Space Link Extension Service): SLE Service implements the SLE standard
+which is a reference model that identifies a set of SLE Transfer Services that enable
+missions to send forward space link data units to a spacecraft and to receive/return space
+link data units form a spacecraft [CCSDS, 2015].
+TC Service (Telecommand Service): It is the service where the telecommands are to be sent
+to the TC I/O Service (Telecommand Input / Output Service). The telecommand is encoded,
+processed, and presented to the client application and other services that need this data
+according to the definitions in the Space Model service.
+TC I/O Service (Telecommand Input / Output Service): It is the service which establishes a
+connection between the satellite and the SLE service. The service is also responsible for
+saving the raw telecommand data.</p>
+<p>Event Log Service: It is the service that serves the event and warning notifications to the
+client application generated by the services and the satellite.
+Settings Service: It is a service where satellite-specific and domain-oriented settings are
+kept. It retrieves settings information from other services and stores them in it’s database. It
+also provides settings to the client application and informs the related services in case of
+changes on settings made by the client application.
+Space Model Service: It creates data structures (telecommand, telemetry, and parameter
+models) necessary for decoding and encoding operations between satellite software and the
+MCS, storing and versioning changes, and it is the service that notifies these changes to the
+client application and the related services.
+Long-Term Archive Service: There is a need for short-term and long-term archiving of certain
+database information specific to the domain and the requirements. This service is responsible for the storage and management of long-term data. It also serves data to the client application.
+Auxiliary Services: It aims to increase the efficiency of development and maintain processes
+by integrating services such as configuration management service, service discovery, APIGateway, identification and authorization, load balancing, circuit-breaking, data observability,
+and other technologies [ECSS-Q-ST-80C, 2009].</p>
+<p>All of these services, which include messaging, monitoring, and logging make up the
+architecture&rsquo;s infrastructure. To ensure high availability and performance, all of these
+infrastructure systems run in clusters. This is called load scalability.
+In the third stage, the details of the microservices architecture design were developed using
+the chosen programming language and appropriate design patterns. In this stage, difficulties
+were encountered such as communication among microservices, integration of developed
+services, communication of user interface and services.</p>
+<p>In the fourth stage, it is planned to discuss the approaches for managing the additional
+testing complexity of multiple independently deployable components as well as how to have
+tests and the application remain correct despite having multiple teams each acting as
+guardians for different services [Lewis, 2014]. Unit testing, integration testing, component
+testing, contract testing and end-to-end testing scenarios will be applied.</p>
+<h1 id="challenges"><a href="#challenges" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>CHALLENGES</h1>
+<p>Microservice design seeks to address the challenges associated with monolithic systems. In
+addition to the advantages of microservices architecture, there are also some challenges that
+need to be overcome. These challenges are described as follows.
+Service Discovery: In the monolithic architecture, the addresses and ports to be reached do
+not change dynamically and are kept statically in some properties or settings files. Due to the
+use of static addresses in the monolithic architecture, service discovery is not needed, but
+the situations are different in microservices architecture. Since the addresses of the services
+are determined dynamically in the microservices architecture, when a service communicates
+with another service, it cannot know the address of the service with which it will communicate
+directly. The mechanism by which these dynamically changing service addresses are
+managed is called service discovery. Service registry is the main part of service discovery.
+The service registry works like a database, that is, it is the section where the addresses of
+the services are stored. [Richardson, 2015]
+There are two service discovery patterns: client-side discovery and server-side discovery. In
+the client-side discovery, the requesting service obtains the address directly by querying the
+service registry. [Richardson, (n.d.)] In the server-side discovery, there is a router between
+the service and the service registry, so the requesting service obtains the address from the
+registry via the router [Richardson, (n.d.)] We preferred to use server-side discovery instead
+of client-side discovery in our application.
+Service instances must be registered with and deregistered from the service registry. There
+are two ways for this: self-registration pattern and third-party registration pattern. In the selfregistration pattern, the service instances register and deregister themselves to/from the
+service registry so this responsibility is on the services themselves. In the third-party
+registration pattern, the other component is responsible for the registration and deregistration
+of the services. [Richardson, 2015] We preferred to apply self-registration pattern instead of
+the third-party registration pattern in our application.</p>
+<p>We used Netflix Eureka and Apache Zookeeper technologies while developing the concept
+of service discovery in our application.
+Interservice Communication: There are two basic communication types between
+microservices. Synchronous communication is a communication pattern where one
+microservice calls an API which is exposed by another microservice and waits for the
+response. HTTP and gRPC protocols are used for this type of communication. On the other
+hand asynchronous communication is a communication pattern where one microservice
+sends a message to other microservices without waiting for any response. There are both
+advantages and disadvantages between these communication types. [Smid, Wang and
+Cerny, 2019] According to the requirements both patterns are used in the MCS.
+As a synchronous communication example in the MCS, when microservices need telemetry
+or telecommand definitions as a data structure they need to request these information from
+Space Model Service. After a request is received via an HTTP request, Space Model Service
+provides the information synchronously. This type of communication is not complex and is
+easy to trace. Because of the easy tracing, error handling is much easier than asynchronous
+messaging. For synchronous messaging, both services must be available and must work
+properly.</p>
+<p>Telecommand status updates must be notified by Telecommand Service to other
+microservices after commands are sent to the satellite. These telecommand status update
+notifications are sent asynchronously. In the MCS, RabbitMQ is used as an AMQP protocol
+for asynchronous messaging. Because the sender microservice does not need to know the
+receiver microservice, coupling is reduced in this type of communication. These status
+updates must be notified to more than one microservices therefore pub/sub model is used to
+notify subscribers to handle this requirement. Queue brokers could be scaled easily
+according to the workload. When handling failure cases in services, asynchronous
+messaging protocols have some advantages over synchronous messaging protocols. For an
+asynchronous messaging protocol, it is not important whether the receiver microservice is
+available or not. Because when the failure in the receiver microservice is fixed or revised with
+updates on that microservice, messages will be received from the queue broker. But
+installing and managing message broker makes another operational complexity to handle
+and could be a bottleneck of the system therefore it must be configured properly. [“Designing
+interservice communication for microservices”, 2019] As another advantage of asynchronous
+messaging, when the request needs data from more than one service latency will be
+increased in synchronous messaging. For example, if Service A needs data which is stored
+in Service B and Service C partially, then Service A sends a request to Service B and after
+that request Service B must send a request to Service C. Number of services could be more
+than two according to stored data types or the complexity of the data. As the number of
+requested services are increased, the amount of latency may also increase. On the other
+hand, latency could also be a problem for asynchronous messaging when message queues
+becomes overloaded.</p>
+<p>Configuration Management Service: This service mainly serves a purpose of updating
+service settings without the need of redeployment. The source code and program
+configurations should be stored in two different repositories. Although it may be necessary to
+synchronize these repositories when the configuration keys change, they should be handled
+independently of one another. Besides, any updates on the configuration repository should
+be notified to the running services, which they should then respond accordingly.
+Circuit Breaker: A client or a requester service usually make remote calls to a target service
+running in different machines across a network. One of the big difference between in -
+memory calls and remote calls can fail, or hang without a response until some timeout limit is
+reached. If there are high number of unresponsive calls, the system may run out of critical
+resources leading to cascading failures across more than one service. It may cause a single point of failure thus that can be overcome. The purpose of the circuit breaker is to solve this
+problem. The remote call is wrapped with a circuit breaker object, which monitors for failures.
+Once the failures reach a predefined threshold, the circuit breaker forwards remote calls to
+an alternative service, or returns an error message. This will make sure the service is
+responsive. There are three states in the circuit breaking mechanism. When everything is
+normal, the circuit breaker is in the closed state. When the failures exceed the predefined
+threshold, it goes into the open state or half-open state. When the circuit breaker is in the
+open state, the remote calls are forwarded to an alternative service or a default error
+message is returned. When the circuit breaker switches to a half-open state, it tests if the
+underlying problem persists. [Lewis, 2014]</p>
+<p>Load Balancing: There are two types of load balancing methods used in the MCS, internal
+and external load balancing. In internal load balancing, each server should have an internal
+load balancer that retrieves a list of available instances of a requested service from the
+service registry using a service registry client. The internal load balancer will then use local
+metrics, such as the response time of the instances, to manage the load between the
+accessible instances. An internal load balancer reduces the need to set up an external load
+balancer and requires various load balancing methods to be used by different service clients.
+In external load balancing, an external load balancer may be established, which retrieves the
+list of available instances from the service registry and balances the load between service
+instances using a centralized algorithm. This load balancer will act as a proxy (which is not
+suggested) or an instance address locator. Another option is to use a service registry with
+built-in load balancing capabilities and the ability to serve as a load balanced address
+locator.</p>
+<h1 id="future-work"><a href="#future-work" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>FUTURE WORK</h1>
+<p>The containerization technology is widely used to deploy applications in microservices
+architecture. By containerization, the developed applications can run independent from the
+platform and their dependencies can be used in isolation. In this way, the developed
+applications exhibiting a different operating behavior in different environments can be
+prevented. Docker is used to manage and deploy the MCS microservices we have
+developed to the target environment. Docker images of microservices are created, versioned
+and stored in the artifactory manager.
+Creating Docker images is not enough to run applications. A container orchestration tool is
+needed for operations such as checking the health status of running applications, restarting
+them in case of failures, and scaling applications. At this point, we use Kubernetes to
+manage MCS microservices. When it is desired to run services with different parameters in
+different environments such as development, test and production, there is a need to make
+changes in the Kubernetes configuration files. For future work, it is planned to use Helm
+Charts or a similar tool to resolve this issue.
+Non-functional needs such as traceability, load balancing and monitoring appear as services
+and software parts that are both critical and time-consuming to code. Developing these nonfunctional but necessary code increases the complexity and maintainability of the overall
+system. At the point where we want to get rid of this complexity, we come across the concept
+of service mesh.</p>
+<p>Service Mesh is an architectural layer that offers the solution of many non-functional
+problems that a service should consider. It is mainly used for observability, traffic
+management and security. The fact that service mesh can perform operations such as
+discovery, load balancing, failure recovery, metrics, encryption, traceability,
+authentication/authorization and monitoring without the need for any coding creates a very
+advantageous situation for developers. [Calcote and Butcher, 2019]</p>
+<p>There are many products that offer service mesh, we have found it appropriate to use Istio
+for our future work. Istio works with Docker and Kubernetes. It has two parts, the data plane
+and the control plane. The data plane manages the network traffic between services. Istio
+uses the proxy to control all network traffic and it is called sidecar or envoy proxy. The control
+plane is responsible for controlling the proxy according to the values of the configurati on. It
+allows proxy to be reprogrammed when the configuration is updated. Istio has its own add -
+ons that allow direct use of Zipkin, Grafana, Jeager, Kiali and Prometheus. [“The Istio service
+mesh”, (n.d.)]
+Further studies will be carried out to improve on issues such as redundancy, fault tolerance,
+and durability in the microservices architecture. In addition to service redundancy, studies will
+be carried out to ensure that databases in each service work with backup. It is planned to
+work on the efficient use of logging and visualization infrastructure and security architecture.
+Future work will consist of experience on containerization, continuous integration and
+delivery approaches of services.</p>
+<p>** DISCUSSION</p>
+<p>There are some disadvantages of the microservices architecture. The biggest disadvantage
+of a microservices architecture is it’s increased complexity over a monolithic application. It is
+difficult to manage a large number of services in the microservices architecture. As
+microservices rely on messaging, it increases communication cost (network latency,
+message processing). It is more difficult to test and monitor the system. It is also more
+difficult to maintain transaction management (security, consistency, atomicity, rollback etc).
+Microservices architecture provides eventually consistency because of its distributed
+structure. Therefore, if the system requires transactional consistency, then the microservices
+architecture is not a suitable design solution. Despite these disadvantages, the migration of
+monolithic architecture to microservices architecture is aimed due to the reasons that it
+provides better scalability, higher availability, increased fault tolerance, support of any
+development platform, different language and technologies for the services.</p>
+<h1 id="conclusion"><a href="#conclusion" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>CONCLUSION</h1>
+<p>In this paper, we have analyzed a paradigmatic case study of a mission-critical system: the
+Monitoring and Control Software of Turkish Aerospace. We have investigated both the
+legacy monolithic architecture and the new microservices architecture. Both architectures
+have been documented in terms of their domain-driven design, implementation, scalability,
+flexibility, accessibility, and distribution.
+This has resulted in a thorough investigation of how to divide a monolithic service into many
+services that leverage domain-driven knowledge about space systems. Re-engineering of
+the transformation of monolithic service into microservices led to reduced complexity, lower
+coupling, higher cohesion, and simplified integration.</p>
+<h1 id="references"><a href="#references" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>References</h1>
+<p>Chiang, C., and Bayrak, C. (2006), &ldquo;Legacy Software Modernization,&rdquo; 2006 IEEE
+International Conference on Systems, Man and Cybernetics, pp. 1304-1309, doi:
+10.1109/ICSMC.2006.384895, Oct 2006.</p>
+<p>Calcote, L., Butcher Z. (2019) Istio Up and Running.O&rsquo;Reilly Media, Inc., 2019.
+Designing interservice communication for microservices. (2019), available on
+<a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/design/interservicecommunication" target="_blank" rel="noopener">https://docs.microsoft.com/en-us/azure/architecture/microservices/design/interservicecommunication</a>
+Evans E. (2003) Domain-Driven Design: Tacking Complexity in the Heart of Software.
+Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 2003.</p>
+<p>European Cooperation for Space Standardization (2009), ECSS-E-ST-40C Space
+Engineering – Software.</p>
+<p>European Cooperation for Space Standardization (2009), ECSS-Q-ST-80C Software Product
+Assurance.</p>
+<p>Fowler, S. J. (2016) Production-ready Microservices: Building Standardized Systems Across
+an Engineering Organization. O’Reilly Media, Inc., 2016.</p>
+<p>Furda, A., Fidge, C., Zimmermann, O., Kelly, W., Barros, A. (2018) Migrating Enterprise
+Legacy Source Code to Microservices, IEEE Software.
+Lewis, J. and Fowler, M. (2014). Microservices, available on
+<a href="http://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener">http://martinfowler.com/articles/microservices.html</a></p>
+<p>Newman, S. (2015). Building Microservices. O’Reilly.</p>
+<p>Richardson, C. (n.d.) Pattern: Client-side service discovery, available on
+<a href="https://microservices.io/patterns/client-side-discovery.html" target="_blank" rel="noopener">https://microservices.io/patterns/client-side-discovery.html</a></p>
+<p>Richardson, C. (n.d.) Pattern: Server-side service discovery, available on
+<a href="https://microservices.io/patterns/server-side-discovery.html" target="_blank" rel="noopener">https://microservices.io/patterns/server-side-discovery.html</a></p>
+<p>Richardson, C. (2015) Service Discovery in a Microservices Architecture, available on
+<a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/" target="_blank" rel="noopener">https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/</a>
+Richardson, C. (2016) Refactoring a Monolith into Microservices, available
+on <a href="https://www.nginx.com/blog/refactoring-a-monolith-into-microservices/" target="_blank" rel="noopener">https://www.nginx.com/blog/refactoring-a-monolith-into-microservices/</a></p>
+<p>Space Link Extension – Internet Protocol for Transfer Services (2015), Blue Book CCSDS
+913.1-B-2.</p>
+<p>Smid, A., Wang, R., and Cerny, T. (2019). Case study on data communication in
+microservices architecture. In Proceedings of the Conference on Research in Adaptive and
+Convergent Systems (RACS &lsquo;19). Association for Computing Machinery, New York, NY,
+USA, 261–267.</p>
+<p>The Istio service mesh, (n.d.) available on <a href="https://istio.io/latest/about/service-mesh/" target="_blank" rel="noopener">https://istio.io/latest/about/service-mesh/</a></p>
+<p>Bu şekilde kurulumu tamamlanmış olduk. Soru, görüş ve önerilerinizi bu sayfaya yorum yapabilirsiniz. Bana erişmek için <a href="mailto:volkanulutas@gmail.com">volkanulutas@gmail.com</a> adresini kullanabilirsiniz.</p>
+
+            </div>
+
+        </article>
+
+        
+
+        
+    
+    
+        <ul class="post-copyright">
+            <li class="copyright-item author"><span class="copyright-item-text">Yazar</span>: <a href="http://volkanulutas.com" target="_blank" rel="noopener">Volkan Ulutaş</a></li>
+            
+                
+                
+                
+                
+                <li class="copyright-item link"><span class="copyright-item-text">Bağlantı</span>: <a href="/posts/2021-12-12-mikroservis-migration/" target="_blank" rel="noopener">http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/</a></li>
+            
+            <li class="copyright-item license"><span class="copyright-item-text">Lisans</span>: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
+            
+        </ul>
+    
+
+
+
+        
+    <div class="updated-badge-container">
+        <span title="Updated @ 2021-12-12 17:03:56 &#43;03" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2021-12-12</text><text x="915" y="140" textLength="650" transform="scale(.1)">2021-12-12</text></g></svg>
+        </span></div>
+
+
+
+        
+
+
+        <div class="post-share">
+
+        
+
+        <div class="share-items">
+
+            
+                <div class="share-item twitter">
+                    
+                    <a href="https://twitter.com/share?url=http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/&amp;text=AIAC%272021%20Makalemiz%20Yay%c4%b1nland%c4%b1!&amp;hashtags=Spring,Mikroservis,Monolitik,MonotiktenMikroserviseGe%c3%a7i%c5%9f,TUSA%c5%9e,UzaySistemleri,YerYaz%c4%b1l%c4%b1mlar%c4%b1,&amp;via=volkanulutas" title="Paylaş:Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon twitter-icon"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item facebook">
+                    
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/&amp;hashtag=%23Spring" title="Paylaş:Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon facebook-icon"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item linkedin">
+                    
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/&amp;title=AIAC%272021%20Makalemiz%20Yay%c4%b1nland%c4%b1!&amp;summary=Merhabalar,%20AIAC%2721&amp;rsquo;de%20%28Ankara%20International%20Aerospace%20Conference%29%20TUSA%c5%9e&amp;rsquo;ta%20yapm%c4%b1%c5%9f%20oldu%c4%9fumuz%20%c3%a7al%c4%b1%c5%9fmalar%c4%b1n%20bir%20%c3%b6zeti%20olarak%20yay%c4%b1nlanan%20ve%20sunumunu%20yapm%c4%b1%c5%9f%20oldu%c4%9fumuz,%20&amp;ldquo;Uzay%20Yer%20Yaz%c4%b1l%c4%b1mlar%c4%b1nda%20Monolitik%20Mimariden%20Mikroservis%20Mimarisine%20Ge%c3%a7i%c5%9f&amp;rdquo;%20makalemize%20buradan%20ula%c5%9fabilirsiniz.%20Ayr%c4%b1ca%20tam%20metni%20de%20a%c5%9fa%c4%9f%c4%b1daki%20gibidir,%20keyifli%20okumalar.%0aABSTRACT%20This%20article%20reports%20the%20experiences%20and%20lessons%20learned%20during%20the%20incremental%20migration%20to%20the%20microservices%20architecture%20of%20the%20Monitoring%20and%20Control%20Software%20%28MCS%29,%20which%20is%20developed%20in%20a%20monolithic%20architecture%20by%20Turkish%20Aerospace%20Inc.&amp;source=Volkan%20Uluta%c5%9f" title="Paylaş:LinkedIn" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon linkedin-icon"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                </div>
+            
+
+            
+                <div class="share-item telegram">
+                    
+                    <a href="https://t.me/share/url?url=http://volkanulutas.com/posts/2021-12-12-mikroservis-migration/&amp;text=AIAC%272021%20Makalemiz%20Yay%c4%b1nland%c4%b1!" title="Paylaş:Telegram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon telegram-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg></a>
+                </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+                <div class="share-item qrcode">
+                    <div class="qrcode-container" title="Paylaş:Karakod"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon qrcode-icon"><path d="M0 224h192V32H0v192zM64 96h64v64H64V96zm192-64v192h192V32H256zm128 128h-64V96h64v64zM0 480h192V288H0v192zm64-128h64v64H64v-64zm352-64h32v128h-96v-32h-32v96h-64V288h96v32h64v-32zm0 160h32v32h-32v-32zm-64 0h32v32h-32v-32z"/></svg><div id="qrcode-img"></div>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+
+<script>
+    var typeNumber = 0;
+    var errorCorrectionLevel = 'L';
+    var qr = qrcode(typeNumber, errorCorrectionLevel);
+    qr.addData('http:\/\/volkanulutas.com\/posts\/2021-12-12-mikroservis-migration\/');
+    qr.make();
+    document.getElementById('qrcode-img').innerHTML = qr.createImgTag();
+</script>
+
+                </div>
+            
+
+        </div>
+
+    </div>
+
+
+
+
+        
+    
+    
+        <div class="related-posts">
+            <h2 class="related-title">Bu içerikler ilginizi çekebilir:<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon related-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"/></svg></h2>
+            <ul class="related-list">
+                
+                    <li class="related-item">
+                        <a href="/posts/2021-12-05-mikroservis-performans/" class="related-link">Mikroservis Mimarisinde Karşılaşılan Performans Sorunları ve Çözümleri</a>
+                    </li>
+                
+            </ul>
+        </div>
+    
+
+
+
+        
+    
+        <div class="post-tags">
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/spring-mikroservis-monolitik-monotikten-mikroservise-ge%C3%A7i%C5%9F-tusa%C5%9F-uzay-sistemleri-yer-yaz%C4%B1l%C4%B1mlar%C4%B1/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>Spring, Mikroservis, Monolitik, Monotikten Mikroservise Geçiş, TUSAŞ, Uzay Sistemleri, Yer Yazılımları</a>
+                
+            
+        </div>
+    
+
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+            
+                <li class="post-nav-next">
+                    <a href="/posts/2021-12-05-mikroservis-performans/" rel="next">Mikroservis Mimarisinde Karşılaşılan Performans Sorunları ve Çözümleri &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+    
+
+        <div class="load-comments">
+            <div id="load-comments">Yorumlar Yüklensin mi?</div>
+        </div>
+
+        
+
+        
+
+        
+
+    
+
+
+
+    </div>
+</main>
+
+
+            
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;1969–2021&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Volkan Ulutaş</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:reuixiy@gmail.com" target="_blank" rel="external noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://github.com/reuixiy" target="_blank" rel="external noopener" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://twitter.com/reuixiy" target="_blank" rel="external noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://t.me/yixiuer" target="_blank" rel="external noopener" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon social-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speedAsDuration: true,
+        header: '[data-scroll-header]'
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+        
+
+        
+
+        
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
+
+<script>
+    mediumZoom(document.querySelectorAll('div.post-body img'), {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+
+
+
+
+
+
+<script src="/js/meme.min.7202d9683a1c4119bcddda0c9290350b6eb56040d2813553c587e1e35b628b15.js" integrity="sha256-cgLZaDocQRm83doMkpA1C261YEDSgTVTxYfh41tiixU="></script>
+
+    </body>
+</html>
